@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>The Greenhouse at Lower Wobbling</title>
+<meta name="description" content="An ordinary village does something rather extraordinary. A story about a shed, a lettuce, and a system nobody called a system.">
+<meta name="author" content="">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Greenhouse at Lower Wobbling">
+<meta property="og:description" content="An ordinary village does something rather extraordinary.">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+  :root {
+    --bg:        #faf7f2;
+    --surface:   #f2ece2;
+    --ink:       #1f1c19;
+    --muted:     #6b645c;
+    --rule:      #e0d9cf;
+    --accent:    #7a5c3e;
+    --measure:   38rem;
+    --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:      #15130f;
+      --surface: #1e1b16;
+      --ink:     #e9e3d8;
+      --muted:   #9a938a;
+      --rule:    #2e2a24;
+      --accent:  #c9a678;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: clamp(1.0625rem, 0.95rem + 0.45vw, 1.1875rem);
+    line-height: 1.68;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    hanging-punctuation: first last;
+  }
+
+  /* ---------- progress bar ---------- */
+
+  .progress {
+    position: fixed;
+    inset: 0 0 auto 0;
+    height: 3px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    z-index: 50;
+    will-change: transform;
+  }
+
+  /* ---------- shell ---------- */
+
+  main {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 1.5rem 8rem;
+  }
+
+  /* ---------- title block ---------- */
+
+  header.title {
+    text-align: center;
+    padding: clamp(4rem, 12vh, 8rem) 0 clamp(2.5rem, 6vh, 4rem);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 3rem;
+  }
+
+  header.title h1 {
+    font-size: clamp(2rem, 1.4rem + 2.6vw, 3rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin: 0 0 1rem;
+    text-wrap: balance;
+  }
+
+  header.title .standfirst {
+    font-style: italic;
+    color: var(--muted);
+    font-size: 1.05em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  /* ---------- table of contents ---------- */
+
+  nav.toc {
+    margin: 0 0 4.5rem;
+    padding: 0;
+    font-family: var(--sans);
+    font-size: 0.875rem;
+  }
+
+  nav.toc h2 {
+    font-family: var(--sans);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 1rem;
+  }
+
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.15rem 2rem;
+  }
+
+  @media (min-width: 34rem) {
+    nav.toc ol { grid-template-columns: 1fr 1fr; }
+  }
+
+  nav.toc a {
+    display: block;
+    padding: 0.35rem 0 0.35rem 0.75rem;
+    color: var(--ink);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: border-color 0.15s, color 0.15s;
+  }
+
+  nav.toc a:hover { border-left-color: var(--rule); }
+
+  nav.toc a.current {
+    border-left-color: var(--accent);
+    color: var(--accent);
+  }
+
+  nav.toc .num {
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    margin-right: 0.5rem;
+  }
+
+  /* ---------- sections & headings ---------- */
+
+  section { margin: 0 0 4rem; }
+
+  .kicker {
+    font-family: var(--sans);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.5rem;
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem);
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.75rem;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 2.5rem 0 1rem;
+  }
+
+  p { margin: 0 0 1.15em; }
+
+  p + p { text-indent: 0; }
+
+  /* opening line of each chapter, small flourish */
+  section > p:first-of-type::first-letter {
+    font-size: 1em;
+  }
+
+  /* ---------- dialogue-friendly spacing ---------- */
+
+  /* nothing needed; prose handles it */
+
+  /* ---------- the noticeboard interlude ---------- */
+
+  .noticeboard {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 4rem;
+    font-family: var(--mono);
+    font-size: 0.8125rem;
+    line-height: 1.75;
+  }
+
+  .noticeboard .head {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin: 0 0 1rem;
+    color: var(--accent);
+  }
+
+  .noticeboard p { margin: 0 0 0.85rem; }
+  .noticeboard p:last-child { margin-bottom: 0; }
+
+  .noticeboard .who { font-weight: 700; }
+
+  /* ---------- rules / dividers ---------- */
+
+  .divider {
+    border: 0;
+    height: 0;
+    margin: 3.5rem auto;
+    width: 4rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  hr.star {
+    border: 0;
+    text-align: center;
+    margin: 3.5rem 0;
+    color: var(--rule);
+  }
+  hr.star::before { content: "\2726"; }
+
+  /* ---------- appendix table ---------- */
+
+  .appendix {
+    border-top: 1px solid var(--rule);
+    padding-top: 3rem;
+    margin-top: 4rem;
+  }
+
+  .appendix table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--sans);
+    font-size: 0.875rem;
+    line-height: 1.55;
+    margin: 0 0 1.5rem;
+  }
+
+  .appendix th,
+  .appendix td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.75rem 0.75rem 0.75rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .appendix th {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .appendix td:last-child {
+    font-family: var(--mono);
+    font-size: 0.8125rem;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 30rem) {
+    .appendix td:last-child { white-space: normal; }
+  }
+
+  /* ---------- footer ---------- */
+
+  footer.colophon {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 0.8125rem;
+    color: var(--muted);
+  }
+
+  footer.colophon p { margin: 0 0 0.5rem; }
+
+  footer.colophon a { color: var(--muted); }
+
+  /* ---------- print ---------- */
+
+  @media print {
+    .progress, nav.toc { display: none; }
+    body { background: #fff; color: #000; font-size: 11.5pt; }
+    main { max-width: none; padding: 0; }
+    header.title { padding-top: 0; }
+    section { page-break-inside: auto; margin-bottom: 2rem; }
+    h2 { page-break-after: avoid; }
+    .noticeboard { background: none; border-left: 3px solid #ccc; }
+    a { color: #000; text-decoration: none; }
+  }
+
+  /* ---------- selection ---------- */
+
+  ::selection {
+    background: var(--accent);
+    color: var(--bg);
+  }
+</style>
+</head>
+
+<body>
+<div class="progress" aria-hidden="true"></div>
+
+<main>
+
+  <header class="title">
+    <h1>The Greenhouse at Lower Wobbling</h1>
+    <p class="standfirst">An ordinary village does something rather extraordinary.</p>
+  </header>
+
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#prologue"><span class="num">—</span>Prologue: Trending</a></li>
+      <li><a href="#ch1"><span class="num">1</span>The Lettuce</a></li>
+      <li><a href="#ch2"><span class="num">2</span>The Money</a></li>
+      <li><a href="#ch3"><span class="num">3</span>People Who Weren't Convinced</a></li>
+      <li><a href="#ch4"><span class="num">4</span>The Greenhouse</a></li>
+      <li><a href="#ch5"><span class="num">5</span>The Ledger</a></li>
+      <li><a href="#ch6"><span class="num">6</span>The First Winter</a></li>
+      <li><a href="#ch7"><span class="num">7</span>The Man Who Owned the Ladders</a></li>
+      <li><a href="#ch8"><span class="num">8</span>The Visitors</a></li>
+      <li><a href="#epilogue"><span class="num">—</span>Epilogue: The Report</a></li>
+      <li><a href="#appendix"><span class="num">◆</span>A Note on the Concepts</a></li>
+    </ol>
+  </nav>
+
+  <!-- ============ PROLOGUE ============ -->
+
+  <section id="prologue">
+    <p class="kicker">Prologue</p>
+    <h2>Trending</h2>
+
+    <p>At 6:14 on a Tuesday evening, a man in a very shiny tie told four hundred thousand people that a village in the south-west had gone Communist.</p>
+
+    <p>He was sitting behind a desk designed to look expensive without actually being useful. Behind him was a large screen displaying a photograph of a greenhouse, a red arrow and the words <strong>COMMUNIST TAKEOVER?</strong></p>
+
+    <p>"A so-called collective," he said, in the voice normally reserved for words like <em>cult</em> and <em>rhubarb</em>, "is operating in Lower Wobbling. No money. No private property. Sources say residents are being forced to share lettuce."</p>
+
+    <p>This was not true.</p>
+
+    <p>It was, however, the sort of untrue that travels at the speed of light, while the truth is still looking for its coat.</p>
+
+    <p>By seven o'clock it was on Facebook. By eight it was on Reddit, in a thread titled "Is this the start of the Great Wobbling Gulag?"</p>
+
+    <p>The top comment came from a user called FreedomEagle1776, who had never been to Lower Wobbling but was certain he knew what was happening there.</p>
+
+    <p>The second came from comrade_kettle.</p>
+
+    <p>"Finally," he wrote.</p>
+
+    <p>He had also never been to Lower Wobbling.</p>
+
+    <p>By nine, the Regional Savings &amp; Trust Bank had received an email from its compliance department. By Thursday morning, Mr. Reginald Pennyfeather, Risk Assessment Officer, was standing in a muddy lane with a clipboard, a briefcase, a printout of the Reddit thread and a deeply held belief that every community has a Person Who Decides, hidden behind a desk somewhere.</p>
+
+    <p>Finding the desk, he believed, was merely a matter of patience.</p>
+
+    <p>He had been sent because the bank held the account of a small cooperative called Wobbling Odd Jobs.</p>
+
+    <p>The account had been completely ordinary for two years.</p>
+
+    <p>That was what worried him.</p>
+  </section>
+
+  <hr class="star">
+
+  <!-- ============ CHAPTER ONE ============ -->
+
+  <section id="ch1">
+    <p class="kicker">Chapter One</p>
+    <h2>The Lettuce</h2>
+
+    <p>The trouble had started with a lettuce.</p>
+
+    <p>Not a particularly interesting lettuce, as lettuces go. It was the sort of lettuce that comes sealed in plastic, having travelled further than most of the village's residents, and costs two pounds forty despite tasting faintly of damp paper.</p>
+
+    <p>Mabel Thrupp had been holding it at arm's length in Mr Gribble's shop.</p>
+
+    <p>"Two pounds forty," she said.</p>
+
+    <p>Mr Gribble looked over his glasses.</p>
+
+    <p>"Everything's gone up, Mabel."</p>
+
+    <p>"Well, it hasn't got any better, has it?"</p>
+
+    <p>Mr Gribble considered this. He had been running the shop for thirty-seven years and had learned that arguing with Mabel was a poor investment of time.</p>
+
+    <p>"That's the price."</p>
+
+    <p>Mabel put it back.</p>
+
+    <p>She was seventy-one, a widow, and had lived in Lower Wobbling all her life. She had seen the biscuit factory open, employ half the village and close again, leaving behind an empty building, forty redundant workers and a particularly impressive collection of weeds.</p>
+
+    <p>She had also seen the bus service reduced, the school threatened with closure and the village hall roof repaired so many times that it was now largely made of optimism.</p>
+
+    <p>She was not, by nature, an activist.</p>
+
+    <p>She was, however, extremely difficult to stop once she had decided something was daft.</p>
+
+    <p>"I could grow better in a bucket," she said.</p>
+
+    <p>"Then do," said Ines.</p>
+
+    <p>Ines was eighteen, studying environmental science at college in the nearest town and possessed of the irritating confidence of someone who had discovered that most things are possible if you look them up.</p>
+
+    <p>Mabel looked at her.</p>
+
+    <p>"Is that right?"</p>
+
+    <p>"Yes."</p>
+
+    <p>"Well, I haven't got a bucket."</p>
+
+    <p>"I've got one."</p>
+
+    <p>And that was how it began.</p>
+
+    <p>Not with a manifesto, a committee or a revolutionary meeting. With a bucket, a lettuce and two women who had very different ideas about how long it should take to get things done.</p>
+
+    <p>The bucket produced three lettuces, two of which were eaten by slugs.</p>
+
+    <p>Ines regarded this as a learning opportunity.</p>
+
+    <p>Mabel regarded it as an insult.</p>
+
+    <p>But the following week, Dev arrived with a wheelbarrow, some old timber and a drill.</p>
+
+    <p>Dev was forty-two, a mechanic by trade, and had the unusual ability to repair almost anything except his own finances. He lived in a small cottage outside the village with his daughter, Rosie, and a dog called Bernard who had never fully accepted the existence of gates.</p>
+
+    <p>Dev had been watching the project with mild amusement.</p>
+
+    <p>"You're going to need a shed," he said.</p>
+
+    <p>"We've got a shed," said Mabel.</p>
+
+    <p>"You've got a bucket."</p>
+
+    <p>"Same principle."</p>
+
+    <p>It wasn't, but Dev had learned not to challenge Mabel on matters of principle.</p>
+
+    <p>He had an old garden shed behind his house. It was full of tools he rarely used, including three drills, a chainsaw with a broken pull cord and a ladder that had once belonged to his father.</p>
+
+    <p>He offered to bring them over.</p>
+
+    <p>Then somebody else offered a wheelbarrow.</p>
+
+    <p>Then Hob arrived.</p>
+
+    <p>Nobody knew exactly what Hob's first name was. His birth certificate said Robert, his mother had called him Bobby, and everyone else had called him Hob since he was thirteen. The origin of the nickname had been lost in the mists of time, although Hob claimed it involved a heroic incident with a football and a chimney.</p>
+
+    <p>Hob could fix kettles, radios, washing machines and most things with a plug. He had worked at the biscuit factory until it closed and had since spent his time doing odd jobs.</p>
+
+    <p>He was also lonely, although he would have strongly objected to the description.</p>
+
+    <p>The first repair evening attracted seven people.</p>
+
+    <p>By the third, there were seventeen.</p>
+
+    <p>People brought broken toasters, lawnmowers, bicycles and an alarming number of lamps.</p>
+
+    <p>Someone suggested keeping a record of who was lending what. Dev produced an exercise book.</p>
+
+    <p>Someone else suggested recording who was doing the work.</p>
+
+    <p>Mabel took over the exercise book.</p>
+
+    <p>"Write it down," she said. "Not as money. As thanks, with arithmetic."</p>
+
+    <p>And so the Ledger began.</p>
+
+    <p>Nobody called it a system. Nobody called it socialism. Nobody called it anything particularly clever.</p>
+
+    <p>They called it the Shed.</p>
+
+    <p>As you call your own dog <em>the dog</em>.</p>
+  </section>
+
+  <div class="noticeboard">
+    <p class="head">Lower Wobbling Noticeboard (OFFICIAL) (NO POLITICS)</p>
+    <p><span class="who">Barry G.:</span> Anyone know why there's a van outside the Shed on a Tuesday?</p>
+    <p><span class="who">Sheila P.:</span> Repair evening! Got my toaster back, working!!</p>
+    <p><span class="who">Barry G.:</span> Is it a commune though?</p>
+    <p><span class="who">Sheila P.:</span> It's a toaster, Barry.</p>
+    <p><span class="who">Barry G.:</span> That's not an answer.</p>
+  </div>
+
+  <!-- ============ CHAPTER TWO ============ -->
+
+  <section id="ch2">
+    <p class="kicker">Chapter Two</p>
+    <h2>The Money</h2>
+
+    <p>The first person to ask where the money was coming from was Mrs Prewitt.</p>
+
+    <p>This was not because she was particularly interested in money. It was because she was particularly interested in knowing where it had gone.</p>
+
+    <p>Mrs Prewitt was a retired accountant who still kept her household accounts in a ledger, used a calculator with a paper roll and regarded the phrase "roughly speaking" as a personal attack.</p>
+
+    <p>She had been married to a man who had once bought a second-hand caravan without checking whether it had wheels. She had learned early that enthusiasm was no substitute for arithmetic.</p>
+
+    <p>The Shed was growing, and growing things required resources.</p>
+
+    <p>There was the land beside the river, which belonged to the council. There was glass for the greenhouse, timber, seeds, tools and the occasional quantity of tea that seemed to disappear at a rate disproportionate to the number of people involved.</p>
+
+    <p>The Shed could provide labour. It could repair things. It could grow food.</p>
+
+    <p>But it couldn't manufacture glass, pay a land lease or persuade the electricity company to accept gratitude as payment.</p>
+
+    <p>"We need money," said Mrs Prewitt.</p>
+
+    <p>This caused a brief silence.</p>
+
+    <p>Nobody particularly liked the sound of it.</p>
+
+    <p>"Not much," she continued. "But some. And we need to keep it separate from what we're doing here."</p>
+
+    <p>She explained that they could register a small cooperative, which would provide ordinary services to local businesses.</p>
+
+    <p>They could fix the pub's cellar, repair shelving at the vet, maintain the shop's refrigeration equipment and take on other jobs that people were happy to pay for.</p>
+
+    <p>The money would go into an ordinary bank account.</p>
+
+    <p>The cooperative would pay its taxes, settle its invoices and use the remaining funds to purchase things the village couldn't provide itself.</p>
+
+    <p>"Money comes in at this door," she said, drawing a line on a piece of paper. "It goes out only to buy what we can't make ourselves. It never becomes credits. Credits never become money. It's a one-way valve."</p>
+
+    <p>"Why?" asked Hob.</p>
+
+    <p>"Because the moment you can exchange one for the other, you've created a currency. And the moment you've created a currency, somebody will eventually find a way to collect it."</p>
+
+    <p>Dev looked at the diagram.</p>
+
+    <p>"So we're a business?"</p>
+
+    <p>"Partly."</p>
+
+    <p>"And a charity?"</p>
+
+    <p>"No."</p>
+
+    <p>"Then what are we?"</p>
+
+    <p>Mrs Prewitt put down her pen.</p>
+
+    <p>"At the moment, Robert, we're a group of people who need a greenhouse and haven't yet worked out what to call ourselves."</p>
+
+    <p>The arrangement worked.</p>
+
+    <p>Odd Jobs invoiced customers in pounds. It paid its bills, paid for materials and kept the necessary accounts. Nobody was pretending the outside economy had disappeared.</p>
+
+    <p>Most people continued with their ordinary jobs and paid their taxes.</p>
+
+    <p>The difference was what happened with the things they produced together.</p>
+
+    <p>The greenhouse wasn't going to be owned by whoever had put the most money into it. The ladders weren't going to belong to whoever had bought them. The plans weren't going to be sold to the highest bidder.</p>
+
+    <p>The village was building something it could use together.</p>
+
+    <p>Mr Pennyfeather, when he eventually inspected the bank account, found it entirely conventional.</p>
+
+    <p>He found this the most suspicious thing of all.</p>
+  </section>
+
+  <hr class="star">
+
+  <!-- ============ CHAPTER THREE ============ -->
+
+  <section id="ch3">
+    <p class="kicker">Chapter Three</p>
+    <h2>People Who Weren't Convinced</h2>
+
+    <p>Not everyone was delighted.</p>
+
+    <p>Mr Gribble, the shopkeeper, was initially convinced the Shed was going to destroy his business.</p>
+
+    <p>He had worked in the shop since he was sixteen. His father had owned it before him. He knew which customers preferred brown bread, which ones would ask for credit and which ones would return a tin of beans because the label was slightly crooked.</p>
+
+    <p>He was not a bad man.</p>
+
+    <p>He was a man with a mortgage, a wife who had recently retired and a business that had barely survived the previous three winters.</p>
+
+    <p>Free lettuce did not sound particularly attractive.</p>
+
+    <p>For a month he told anyone who would listen that free food was the thin end of a very large wedge.</p>
+
+    <p>Then his chiller broke.</p>
+
+    <p>Dev came over, spent an afternoon replacing a compressor and sent him an ordinary invoice through Odd Jobs.</p>
+
+    <p>It was cheaper than the commercial repair company.</p>
+
+    <p>The chiller worked better than it had before.</p>
+
+    <p>By autumn, Mr Gribble had a shelf beside the till marked <strong>LOCAL</strong>.</p>
+
+    <p>He insisted it had been his idea.</p>
+
+    <p>Mr Thwaite, however, was not persuaded.</p>
+
+    <p>He owned the hardware shop and had sold ladders, drills, spades and wheelbarrows to the village for twenty-six years.</p>
+
+    <p>The Shed had started lending those very things out.</p>
+
+    <p>He was losing business.</p>
+
+    <p>He was also, although he would never admit it, frightened.</p>
+
+    <p>His father had built the shop from nothing. He had spent years paying off the mortgage, negotiating with suppliers and keeping the doors open through recessions and bad winters.</p>
+
+    <p>Now a group of people with a shed and an exercise book seemed to be telling everyone that they didn't need him.</p>
+
+    <p>One evening he confronted Dev outside the pub.</p>
+
+    <p>"You're giving things away," he said.</p>
+
+    <p>"We're lending things."</p>
+
+    <p>"Same difference."</p>
+
+    <p>"No, it isn't."</p>
+
+    <p>"People need to buy things, Dev. That's how businesses work."</p>
+
+    <p>Dev wiped his hands on a rag.</p>
+
+    <p>"People need ladders. They don't necessarily need to own a ladder."</p>
+
+    <p>"Well, I sell ladders."</p>
+
+    <p>"I know."</p>
+
+    <p>"And what happens when your lot break one?"</p>
+
+    <p>"We fix it."</p>
+
+    <p>"And what happens when you can't?"</p>
+
+    <p>Dev paused.</p>
+
+    <p>"Then we buy one from you."</p>
+
+    <p>Thwaite looked at him.</p>
+
+    <p>"Very clever."</p>
+
+    <p>There was no answer to that.</p>
+
+    <p>He went home angry, and Dev went back to work.</p>
+
+    <p>The next morning Mabel found a letter in the Shed's postbox.</p>
+
+    <p>It was from a supermarket chain, concerned about the use of the words <em>Market Garden</em> in an online notice.</p>
+
+    <p>Mrs Prewitt read it twice.</p>
+
+    <p>Then she took out her red pen.</p>
+
+    <p>She was looking forward to this.</p>
+  </section>
+
+  <hr class="star">
+
+  <!-- ============ CHAPTER FOUR ============ -->
+
+  <section id="ch4">
+    <p class="kicker">Chapter Four</p>
+    <h2>The Greenhouse</h2>
+
+    <p>By the time the Shed had thirty-one members, a small account at an ordinary bank, a larder in the old chapel and a growing collection of borrowed tools, Ines had noticed something.</p>
+
+    <p>The village was still losing half its winter greens to frost.</p>
+
+    <p>She stood in the barn one Thursday evening with a notebook, a diagram and the expression of someone who had been waiting several weeks for the opportunity to explain something.</p>
+
+    <p>"We need a greenhouse."</p>
+
+    <p>Mabel looked at the diagram.</p>
+
+    <p>"How big?"</p>
+
+    <p>"Big enough to make a difference."</p>
+
+    <p>"That's not a measurement."</p>
+
+    <p>Ines sighed.</p>
+
+    <p>Dev examined the drawing.</p>
+
+    <p>"Where?"</p>
+
+    <p>"By the river," said Ines.</p>
+
+    <p>"Too far from the road," said Hob.</p>
+
+    <p>"Near the road, then."</p>
+
+    <p>"Not enough water."</p>
+
+    <p>"Rainwater collection."</p>
+
+    <p>"On what roof?"</p>
+
+    <p>Ines looked at the ceiling.</p>
+
+    <p>It was going to be a long evening.</p>
+
+    <p>Normally, this would have been the point at which the village split into factions and began a feud that lasted three generations.</p>
+
+    <p>But Lower Wobbling had something new.</p>
+
+    <p>The Board.</p>
+
+    <p>It wasn't a board of people. It was an actual board, with a screen.</p>
+
+    <p>The Board had been introduced by a university student who had visited the Shed after seeing a notice online. She had explained that there were ways to organise complicated decisions without simply putting everything to a vote.</p>
+
+    <p>The idea was simple.</p>
+
+    <p>Everyone could see the proposals. Everyone could see the objections. Nobody's concerns disappeared simply because somebody else had a louder voice.</p>
+
+    <p>When someone raised an objection, it was pinned beside the proposal it challenged.</p>
+
+    <p>If somebody thought the greenhouse would cast too much shade on the neighbouring field, their concern appeared beside the relevant plans.</p>
+
+    <p>If someone else had measurements showing that the shade would be minimal, those measurements appeared alongside the objection.</p>
+
+    <p>A little gauge in the corner showed whether the room was moving towards agreement or away from it.</p>
+
+    <p>"It's a thermometer," Ines explained to Mr Pennyfeather when he eventually visited, "for how annoyed we are."</p>
+
+    <p>On Thursday, the gauge was stuck at <strong>VERY ANNOYED</strong>.</p>
+
+    <p>The argument was where to put the greenhouse.</p>
+
+    <p>The river offered water. The road offered easier transport. The southern field offered better sunlight but was already being used for vegetables.</p>
+
+    <p>Nobody wanted to give up their preferred location.</p>
+
+    <p>So they tried something different.</p>
+
+    <p>The Board suggested breaking the discussion into smaller groups, with people moving between them. Each group considered a different aspect of the problem, then reported its findings to another group.</p>
+
+    <p>Mabel found herself discussing water supply with Mr Thwaite, who had come along to observe proceedings and was not enjoying himself.</p>
+
+    <p>Ines found herself explaining the benefits of the southern field to Hob, who had initially opposed it.</p>
+
+    <p>Dev was busy calculating the cost of the foundations.</p>
+
+    <p>Something unexpected happened.</p>
+
+    <p>People began changing their minds.</p>
+
+    <p>Not because they had been defeated, but because they were hearing things they hadn't considered.</p>
+
+    <p>By Friday, the greenhouse was going up beside the river, with a gravel path connecting it to the road.</p>
+
+    <p>Nobody had won.</p>
+
+    <p>Everyone could live with it, which is the highest compliment in politics.</p>
+
+    <p>"Where did the plans come from?" asked Mr Pennyfeather.</p>
+
+    <p>"From everyone," said Dev.</p>
+
+    <p>The Notebook was shared. Someone in another county had worked out the ideal roof angle. Someone else had designed a simple rainwater collection system. Ines had improved the ventilation.</p>
+
+    <p>"Don't you pay for these plans?"</p>
+
+    <p>Dev looked at him.</p>
+
+    <p>"They're plans. They don't get used up."</p>
+
+    <p>The Notebook recorded the materials, energy, labour and environmental costs of each design.</p>
+
+    <p>A beautiful design that required too much glass, timber or maintenance was marked in red.</p>
+
+    <p>A less impressive design that could be repaired with locally available materials might be preferable.</p>
+
+    <p>The village spent several evenings making the greenhouse less greedy.</p>
+
+    <p>Building began the following Monday.</p>
+
+    <p>The Rota took over.</p>
+
+    <p>The Rota was the nearest thing Lower Wobbling had to a manager, and it wasn't a person.</p>
+
+    <p>It was a list.</p>
+
+    <p>It divided the work into frames, glazing, soil, water, foundations and someone-to-make-the-tea.</p>
+
+    <p>The last was considered a load-bearing activity.</p>
+
+    <p>People signed up for what they could do. Those who couldn't hold a hammer straight put their names down for carrying things, preparing meals or looking after the children.</p>
+
+    <p>When they needed glass that wasn't available locally, a temporary group was formed to organise transport from the next valley.</p>
+
+    <p>When the glass arrived, the group dissolved.</p>
+
+    <p>Nobody needed to appoint a permanent glass transportation manager.</p>
+
+    <p>Mr Pennyfeather watched Hob coordinate eleven people and a cart without raising his voice.</p>
+
+    <p>"How do you do that?"</p>
+
+    <p>"I don't," said Hob. "It's on the Rota. I just read it out loud."</p>
+  </section>
+
+  <hr class="star">
+
+  <!-- ============ CHAPTER FIVE ============ -->
+
+  <section id="ch5">
+    <p class="kicker">Chapter Five</p>
+    <h2>The Ledger</h2>
+
+    <p>Mr Pennyfeather was particularly interested in the Ledger.</p>
+
+    <p>At last, something he understood.</p>
+
+    <p>Numbers.</p>
+
+    <p>He opened his briefcase and took out a fresh notebook.</p>
+
+    <p>"Who owns the credits?"</p>
+
+    <p>"Whoever did the work," said Ines.</p>
+
+    <p>"And what do they buy?"</p>
+
+    <p>"Things they need."</p>
+
+    <p>"Such as?"</p>
+
+    <p>"Food. Clothes. A bicycle. Whatever's available."</p>
+
+    <p>"And the exchange rate?"</p>
+
+    <p>"There isn't one."</p>
+
+    <p>Mr Pennyfeather looked up.</p>
+
+    <p>"Then how do you decide what things cost?"</p>
+
+    <p>Ines brought out the Ledger.</p>
+
+    <p>A thing cost what it took to make.</p>
+
+    <p>The hours of work, the materials used, the energy required, the wear on the tools and the impact on the land.</p>
+
+    <p>Food and other essentials were treated differently where necessary. Someone who couldn't contribute much because of illness, age or caring responsibilities wasn't expected to go without.</p>
+
+    <p>The Ledger was designed to recognise contributions without turning those contributions into a competition.</p>
+
+    <p>Mr Pennyfeather frowned.</p>
+
+    <p>"And if I earn lots of credits and keep them?"</p>
+
+    <p>"They fade."</p>
+
+    <p>"Fade?"</p>
+
+    <p>"Slowly. Like milk."</p>
+
+    <p>"And if I spend them?"</p>
+
+    <p>"They disappear."</p>
+
+    <p>"To whom?"</p>
+
+    <p>"Nobody. They're used up."</p>
+
+    <p>Mr Pennyfeather sat very still.</p>
+
+    <p>"So nobody could get rich?"</p>
+
+    <p>"No," said Ines.</p>
+
+    <p>He wrote something on his clipboard.</p>
+
+    <p>Then he crossed it out.</p>
+
+    <p>The system wasn't perfect. There were arguments about how much different jobs should count for. Some people thought their contributions were undervalued. Others worried that the calculations were becoming too complicated.</p>
+
+    <p>Mrs Prewitt insisted that the Ledger needed regular reviews.</p>
+
+    <p>Mabel insisted that it should never become so complicated that ordinary people couldn't understand it.</p>
+
+    <p>Ines insisted that the software could handle most of the arithmetic.</p>
+
+    <p>Dev insisted that nobody should be allowed to redesign it without asking the people who actually used it.</p>
+
+    <p>They eventually agreed on all three.</p>
+
+    <p>Every second Thursday, two different villagers visited each household.</p>
+
+    <p>They brought a notebook and a flask.</p>
+
+    <p>The visits were not inspections. They were conversations.</p>
+
+    <p>What was working?</p>
+
+    <p>What wasn't?</p>
+
+    <p>What did people need?</p>
+
+    <p>What had they noticed?</p>
+
+    <p>The answers were sometimes practical.</p>
+
+    <p>The north row's drying out.</p>
+
+    <p>The vent sticks on windy days.</p>
+
+    <p>We've got too many herbs. Anyone want herbs?</p>
+
+    <p>Sometimes they were more personal.</p>
+
+    <p>Hob's been doing too much glazing.</p>
+
+    <p>Rosie needs someone to collect her from school next Thursday.</p>
+
+    <p>The old chapel is getting damp.</p>
+
+    <p>The information went back to the Board and was directed to whoever could help.</p>
+
+    <p>The dry north row went to the Notebook. The designers added an irrigation line.</p>
+
+    <p>The sticking vent went to Dev, who sighed and fetched a spanner.</p>
+
+    <p>The herbs went to the Rota, which found neighbours who wanted them.</p>
+
+    <p>Hob went on the tea.</p>
+
+    <p>"It's not clever," said Mabel, handing Mr Pennyfeather a mug.</p>
+
+    <p>"Then what is it?"</p>
+
+    <p>"Nothing's allowed to stay broken because nobody noticed."</p>
+  </section>
+
+  <hr class="star">
+
+  <!-- ============ CHAPTER SIX ============ -->
+
+  <section id="ch6">
+    <p class="kicker">Chapter Six</p>
+    <h2>The First Winter</h2>
+
+    <p>The greenhouse was finished in March.</p>
+
+    <p>By May it was producing more than anyone had expected.</p>
+
+    <p>The first harvest was a small event.</p>
+
+    <p>People arrived with baskets. Children ran between the beds. Mabel stood by the entrance pretending not to be pleased.</p>
+
+    <p>Ines had organised a little ceremony, complete with a speech.</p>
+
+    <p>Mabel interrupted it to announce that the lettuces were ready.</p>
+
+    <p>The speech was abandoned.</p>
+
+    <p>By summer, the Ledger had quietly reduced the cost of greens.</p>
+
+    <p>At the beginning, a lettuce had cost nine minutes of somebody's afternoon.</p>
+
+    <p>Now it cost four.</p>
+
+    <p>"It gets cheaper because we get better at it," said Ines. "Not because someone's having a sale."</p>
+
+    <p>The village had begun to understand something important.</p>
+
+    <p>The point wasn't to create a place where everything was free.</p>
+
+    <p>The point was to create a place where the things people needed could be produced with less waste, less duplication and less unnecessary effort.</p>
+
+    <p>But the first winter brought trouble.</p>
+
+    <p>A long dry spell had left the river lower than anyone could remember. Some of the crops failed. The greenhouse needed repairs, and the electricity bill for the propagation equipment was higher than expected.</p>
+
+    <p>For the first time, the village was short of something important.</p>
+
+    <p>People became anxious.</p>
+
+    <p>Gerald Pocock, who owned three sheds and forty years' worth of nails, was particularly unhappy.</p>
+
+    <p>"I told you this would happen," he said.</p>
+
+    <p>He had not, in fact, told anyone this would happen.</p>
+
+    <p>But he was enjoying the opportunity.</p>
+
+    <p>"We should have kept more back," he said. "You can't rely on everyone else."</p>
+
+    <p>Mabel listened.</p>
+
+    <p>She didn't agree with him.</p>
+
+    <p>But she understood him.</p>
+
+    <p>Gerald had grown up in a house where money was always short. His father had worked long hours and still struggled to keep food on the table. Gerald had learned that if you wanted something available when you needed it, you had better keep it yourself.</p>
+
+    <p>That wasn't stupidity.</p>
+
+    <p>It was experience.</p>
+
+    <p>So Mabel asked him to help review the larder.</p>
+
+    <p>He came reluctantly.</p>
+
+    <p>They discovered that the chapel had enough stored food for several weeks, but not enough of everything. Some items were plentiful. Others were running low.</p>
+
+    <p>Gerald suggested a proper reserve.</p>
+
+    <p>Not a huge one, but enough to give people confidence.</p>
+
+    <p>He also suggested that they stop pretending the greenhouse could supply everything.</p>
+
+    <p>Nobody had thought it could, but it was worth saying.</p>
+
+    <p>They adjusted the planting schedule, made arrangements with two neighbouring growers and began building a better reserve.</p>
+
+    <p>Gerald still kept his own tins.</p>
+
+    <p>But he began lending his long ladder to the Shed.</p>
+
+    <p>He told everyone it had been his idea.</p>
+  </section>
+
+  <hr class="star">
+
+  <!-- ============ CHAPTER SEVEN ============ -->
+
+  <section id="ch7">
+    <p class="kicker">Chapter Seven</p>
+    <h2>The Man Who Owned the Ladders</h2>
+
+    <p>Mr Thwaite didn't come round.</p>
+
+    <p>Not for the greenhouse opening. Not for the harvest. Not even for the village meeting about the water shortage.</p>
+
+    <p>He continued running his hardware shop.</p>
+
+    <p>Business was down.</p>
+
+    <p>One afternoon Dev went in to buy some bolts.</p>
+
+    <p>Thwaite served him without looking up.</p>
+
+    <p>"How's your little revolution?"</p>
+
+    <p>"Still going."</p>
+
+    <p>"Good for you."</p>
+
+    <p>Dev paid.</p>
+
+    <p>"Listen," he said. "We've got a few jobs coming up. Could use some supplies."</p>
+
+    <p>"Why? Haven't you got everything in your shed?"</p>
+
+    <p>"Not everything."</p>
+
+    <p>Thwaite looked at him.</p>
+
+    <p>Dev explained that the Shed wasn't trying to replace every business in the village. There were things that made sense to share and things that made sense to buy.</p>
+
+    <p>Thwaite listened without saying much.</p>
+
+    <p>Then he asked a question.</p>
+
+    <p>"What happens if you lot decide you don't need me?"</p>
+
+    <p>Dev didn't answer immediately.</p>
+
+    <p>It was a fair question.</p>
+
+    <p>He thought about it.</p>
+
+    <p>"I suppose we'd have to decide what sort of village we wanted to be."</p>
+
+    <p>Thwaite shook his head.</p>
+
+    <p>"Easy for you. You've got a job."</p>
+
+    <p>Dev looked at him.</p>
+
+    <p>It was the first time he'd considered what this might look like from the other side.</p>
+
+    <p>Thwaite had built his livelihood around selling things people needed. The Shed was changing the pattern of demand. Even if nobody intended to hurt him, the consequences were real.</p>
+
+    <p>"We don't want you to lose your business," Dev said.</p>
+
+    <p>"Wanting doesn't pay the mortgage."</p>
+
+    <p>"No. It doesn't."</p>
+
+    <p>There was a silence.</p>
+
+    <p>Dev bought the bolts.</p>
+
+    <p>On his way out, he noticed a stack of old wooden shelves in the storeroom.</p>
+
+    <p>"What are those for?"</p>
+
+    <p>"Nothing. Can't shift them."</p>
+
+    <p>"Could we use them in the chapel?"</p>
+
+    <p>Thwaite shrugged.</p>
+
+    <p>"Take them."</p>
+
+    <p>Dev loaded them into the van.</p>
+
+    <p>He didn't offer payment.</p>
+
+    <p>Thwaite didn't ask for any.</p>
+
+    <p>It wasn't reconciliation.</p>
+
+    <p>But it was a start.</p>
+  </section>
+
+  <hr class="star">
+
+  <!-- ============ CHAPTER EIGHT ============ -->
+
+  <section id="ch8">
+    <p class="kicker">Chapter Eight</p>
+    <h2>The Visitors</h2>
+
+    <p>By the second year, people from other villages had started visiting.</p>
+
+    <p>Some came out of curiosity.</p>
+
+    <p>Some came because they were interested in the greenhouse.</p>
+
+    <p>Others came because they had heard about the Ledger and wanted to know how it worked.</p>
+
+    <p>A group from a town twenty miles away arrived one Saturday morning.</p>
+
+    <p>They were particularly interested in the Board.</p>
+
+    <p>One of them, a man called Andrew, spent most of the morning asking who was in charge.</p>
+
+    <p>"Nobody," said Ines.</p>
+
+    <p>"That can't be right."</p>
+
+    <p>"Why?"</p>
+
+    <p>"Because somebody has to make decisions."</p>
+
+    <p>"They do."</p>
+
+    <p>"Who?"</p>
+
+    <p>"Everyone, depending on the decision."</p>
+
+    <p>Andrew looked unconvinced.</p>
+
+    <p>He had spent fifteen years working in local government and had learned that every decision needed a responsible person, a budget code and a meeting in which everyone agreed that another meeting was required.</p>
+
+    <p>He was not accustomed to the idea that people might simply organise themselves around a shared problem.</p>
+
+    <p>The visitors also asked about the Ledger.</p>
+
+    <p>They wanted to know how it would work in a town of three thousand people.</p>
+
+    <p>Nobody had a complete answer.</p>
+
+    <p>That evening, Ines admitted to Mabel that she was worried.</p>
+
+    <p>"What if it doesn't scale?"</p>
+
+    <p>Mabel was sorting potatoes.</p>
+
+    <p>"What's that mean?"</p>
+
+    <p>"What if it works here but doesn't work somewhere bigger?"</p>
+
+    <p>"Then they'll have to work it out."</p>
+
+    <p>"But shouldn't we have a model?"</p>
+
+    <p>Mabel considered this.</p>
+
+    <p>"There's no point building a bigger greenhouse if you haven't worked out how to water the first one."</p>
+
+    <p>Ines laughed.</p>
+
+    <p>Mabel continued sorting.</p>
+
+    <p>"Besides, love, we're not building a religion. If something doesn't work, change it."</p>
+  </section>
+
+  <hr class="star">
+
+  <!-- ============ EPILOGUE ============ -->
+
+  <section id="epilogue">
+    <p class="kicker">Epilogue</p>
+    <h2>The Report</h2>
+
+    <p>Mr Pennyfeather eventually completed his report.</p>
+
+    <p>He had spent several weeks visiting Lower Wobbling, examining the books and trying to identify the person responsible for the organisation.</p>
+
+    <p>He hadn't found them.</p>
+
+    <p>He had found Mabel, who appeared to be responsible for everything and nothing.</p>
+
+    <p>He had found Ines, who could explain the entire system but was usually too busy to do so.</p>
+
+    <p>He had found Dev, who insisted that he was merely fixing things.</p>
+
+    <p>He had found Mrs Prewitt, who had produced more paperwork than the bank's entire compliance department.</p>
+
+    <p>He had found Hob, who had never once claimed to be in charge of anything.</p>
+
+    <p>And he had found a village that seemed to be making decisions without anyone being particularly important.</p>
+
+    <p>On the train home, he opened his briefcase.</p>
+
+    <p>His report was titled:</p>
+
+    <p><em>Assessment of Risk: Lower Wobbling Odd Jobs.</em></p>
+
+    <p>Under <strong>FINDINGS</strong> he had written:</p>
+
+    <p><em>An ordinary cooperative.</em></p>
+
+    <p>He crossed it out.</p>
+
+    <p>He wrote:</p>
+
+    <p><em>A socialist commune.</em></p>
+
+    <p>He crossed that out too.</p>
+
+    <p>He wrote:</p>
+
+    <p><em>A capitalist enterprise.</em></p>
+
+    <p>He crossed that out, because it didn't behave like one.</p>
+
+    <p>Eventually he wrote:</p>
+
+    <p><em>It is a shed.</em></p>
+
+    <p>He looked at the sentence for a long time.</p>
+
+    <p>It was the truest thing he had written in nineteen years.</p>
+
+    <p>It was also, he suspected, unlikely to satisfy anyone on the internet.</p>
+
+    <p>It didn't.</p>
+
+    <p>The man in the shiny tie moved on to a story about a goose within four days.</p>
+
+    <p>The Reddit thread reached eleven thousand comments and a dispute over whether the Soviet Union had ever produced a decent lettuce.</p>
+
+    <p>Gerald Pocock was spotted at the larder holding two lettuces and denying everything.</p>
+
+    <p>And in the barn at Lower Wobbling, somebody was already proposing a second greenhouse.</p>
+
+    <p>Somebody else was objecting.</p>
+
+    <p>The little gauge for how annoyed everyone was crept upward.</p>
+
+    <p>Then, slowly, it began to come down again.</p>
+
+    <p>Mabel sat beside the door, watching the discussion.</p>
+
+    <p>She had a cup of tea in one hand and a small notebook in the other.</p>
+
+    <p>Ines came over.</p>
+
+    <p>"What are you writing?"</p>
+
+    <p>"Nothing."</p>
+
+    <p>"Looks like something."</p>
+
+    <p>Mabel closed the notebook.</p>
+
+    <p>"Just keeping track."</p>
+
+    <p>"Of what?"</p>
+
+    <p>Mabel looked around the room.</p>
+
+    <p>At the people arguing, laughing, disagreeing and occasionally getting things done.</p>
+
+    <p>"Of what's possible," she said.</p>
+
+    <p>And then she went to put the kettle on.</p>
+  </section>
+
+  <!-- ============ APPENDIX ============ -->
+
+  <section id="appendix" class="appendix">
+    <p class="kicker">Appendix</p>
+    <h2>A Note on the Underlying Concepts</h2>
+
+    <table>
+      <thead>
+        <tr><th scope="col">Story element</th><th scope="col">Subsystem</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Barn meetings, pinned objections, deliberation and the annoyance gauge</td><td>CDS &mdash; Collaborative Decision System</td></tr>
+        <tr><td>Shared Notebook and reusable designs</td><td>OAD &mdash; Open Access Design</td></tr>
+        <tr><td>Rota, task sign-ups and temporary working groups</td><td>COS &mdash; Cooperative Organization System</td></tr>
+        <tr><td>Contribution records, ecological costing and fading credits</td><td>ITC &mdash; Integral Time Credits</td></tr>
+        <tr><td>Household visits and feedback loops</td><td>FRS &mdash; Feedback &amp; Review System</td></tr>
+        <tr><td>Greens becoming cheaper through improved production</td><td>Post-scarcity trajectory</td></tr>
+        <tr><td>Wobbling Odd Jobs and its ordinary bank account</td><td>Interface cooperative</td></tr>
+        <tr><td>Public arguments over labels</td><td>Transition, legitimacy and framing</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer class="colophon">
+  <p><em>The Greenhouse at Lower Wobbling.</em></p>
+  <p>Set in your browser's serif. No tracking, no cookies, no script beyond the reading bar.</p>
+</footer>
+
+<script>
+(function () {
+  var bar = document.querySelector('.progress');
+  var sections = Array.prototype.slice.call(document.querySelectorAll('section[id]'));
+  var links = {};
+  Array.prototype.forEach.call(document.querySelectorAll('nav.toc a'), function (a) {
+    links[a.getAttribute('href').slice(1)] = a;
+  });
+
+  function update() {
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    bar.style.transform = 'scaleX(' + (max > 0 ? h.scrollTop / max : 0) + ')';
+
+    var current = sections[0];
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i].getBoundingClientRect().top <= 140) current = sections[i];
+    }
+    for (var id in links) links[id].classList.remove('current');
+    if (current && links[current.id]) links[current.id].classList.add('current');
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
+
+</body>
+</html>
