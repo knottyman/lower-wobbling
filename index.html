@@ -193,14 +193,52 @@
 
   p + p { text-indent: 0; }
 
-  /* opening line of each chapter, small flourish */
-  section > p:first-of-type::first-letter {
-    font-size: 1em;
+  /* ---------- images ---------- */
+
+  figure {
+    margin: 0 0 3.5rem;
+    text-align: center;
   }
 
-  /* ---------- dialogue-friendly spacing ---------- */
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: block;
+  }
 
-  /* nothing needed; prose handles it */
+  @media (prefers-color-scheme: dark) {
+    figure img {
+      filter: brightness(0.85) contrast(1.05);
+    }
+  }
+
+  figcaption {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 0.85rem;
+    font-style: italic;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-image {
+    margin: -1.5rem 0 3rem;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  .hero-image img {
+    border-radius: 0;
+    box-shadow: none;
+    max-height: 45vh;
+    object-fit: cover;
+  }
 
   /* ---------- the noticeboard interlude ---------- */
 
@@ -316,6 +354,8 @@
     h2 { page-break-after: avoid; }
     .noticeboard { background: none; border-left: 3px solid #ccc; }
     a { color: #000; text-decoration: none; }
+    figure img { box-shadow: none; border: 1px solid #ccc; }
+    .hero-image { display: none; }
   }
 
   /* ---------- selection ---------- */
@@ -336,6 +376,11 @@
     <h1>The Greenhouse at Lower Wobbling</h1>
     <p class="standfirst">An ordinary village does something rather extraordinary.</p>
   </header>
+
+  <div class="hero-image">
+    <!-- Replace 'road-to-village.jpg' with your actual image file name -->
+    <img src="road-to-village.jpg" alt="A misty road leading into a rolling green valley with thatched cottages.">
+  </div>
 
   <nav class="toc" aria-label="Contents">
     <h2>Contents</h2>
@@ -696,6 +741,20 @@
   <section id="ch4">
     <p class="kicker">Chapter Four</p>
     <h2>The Greenhouse</h2>
+
+    <figure>
+      <!-- Replace 'greenhouse-garden.jpg' with your actual image file name -->
+      <img src="greenhouse-garden.jpg" alt="An illustrated cottage garden at sunset with a glass greenhouse, vegetable beds, and roses." loading="lazy">
+      <figcaption>The greenhouse, the beds, and the path to the road.</figcaption>
+    </figure>
+
+    <p>The letter from the supermarket chain had been, Mrs Prewitt decided, a masterpiece of corporate hedging. It expressed "concern" about the use of the phrase <em>Market Garden</em> in an online notice, cited "brand alignment" and "territorial clarity", and suggested a "without prejudice conversation" at their earliest convenience.</p>
+
+    <p>She read it twice, then took out her red pen.</p>
+
+    <p>Her reply was three sentences long. It explained that the Shed had no interest in becoming a supermarket, that the words <em>Market Garden</em> had been chosen because they described a garden where things were sold at a market, and that if the chain wished to discuss territorial clarity they were welcome to visit on a Thursday, when the tea was free but the opinions were not.</p>
+
+    <p>She did not receive a reply. The notice remained unchanged.</p>
 
     <p>By the time the Shed had thirty-one members, a small account at an ordinary bank, a larder in the old chapel and a growing collection of borrowed tools, Ines had noticed something.</p>
 
