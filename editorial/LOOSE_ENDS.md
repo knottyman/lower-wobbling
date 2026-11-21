@@ -3,10 +3,9 @@
 Pick up one item per session. Mark status as OPEN, IN PROGRESS, or DONE.
 
 ## LE-01: One-Way Valve vs. Ledger Credits Buying Goods
-- Status: OPEN
+- Status: DONE
 - Locations: Chapter 2 ("The Money"), Chapter 5 ("The Ledger")
-- Issue: Chapter 2 sets up a strict "one-way valve" where pounds and Ledger credits never exchange. Chapter 5 has Ines say credits can buy "Food. Clothes. A bicycle. Whatever's available," while credits also "fade like milk."
-- Target Fix: Clarify in Chapter 5 that Ledger credits apply to internal Shed/chapel-larder items (surplus produce, repaired bikes, donated clothes/swaps), while outside purchases (retail goods, glass, electricity, land lease) stay strictly in pounds via Wobbling Odd Jobs.
+- Resolution: Clarified the strict separation in Chapter 2 (Mrs Prewitt explicitly states "Credits circulate only what we produce or repair here. The moment a thing requires pounds... it is not a Ledger item"). In Chapter 5, changed Ines's list to internal items (produce, repaired bikes) and added a short exchange where Pennyfeather pushes on the loophole ("What if I want something you can't make?"), confirming that pounds and credits cannot be exchanged.
 
 ## LE-02: Dangling Supermarket "Market Garden" Letter
 - Status: DONE
