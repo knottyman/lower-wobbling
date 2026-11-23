@@ -263,6 +263,58 @@
 
   .noticeboard .who { font-weight: 700; }
 
+  /* ---------- r/cork thread interlude ---------- */
+
+  .thread {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 4rem;
+    font-family: var(--sans);
+    font-size: 0.8125rem;
+    line-height: 1.6;
+  }
+
+  .thread .thread-head {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .thread .comment {
+    margin: 0 0 1rem;
+    padding-left: 0.75rem;
+    border-left: 2px solid var(--rule);
+  }
+
+  .thread .comment:last-child { margin-bottom: 0; }
+
+  .thread .handle {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+
+  .thread .comment p { margin: 0; }
+
+  .thread .deleted {
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .thread .modnote {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
   /* ---------- rules / dividers ---------- */
 
   .divider {
@@ -350,7 +402,7 @@
     header.title { padding-top: 0; }
     section { page-break-inside: auto; margin-bottom: 2rem; }
     h2 { page-break-after: avoid; }
-    .noticeboard { background: none; border-left: 3px solid #ccc; }
+    .noticeboard, .thread { background: none; border-left: 3px solid #ccc; }
     a { color: #000; text-decoration: none; }
     figure img { box-shadow: none; border: 1px solid #ccc; }
     .hero-image { display: none; }
@@ -1310,6 +1362,107 @@
     <p>He smiled—the first real smile she'd seen from him—and went out into the rain.</p>
 
     <p>Ines watched him go. Then she finished stacking the chairs, and turned off the lights, and went to help her mother close up.</p>
+
+    <hr class="star">
+
+    <p>Two days later, a thread appeared on r/cork.</p>
+
+    <p>Ines saw it first, on the bus home, and read it twice before she showed anyone.</p>
+  </section>
+
+  <!-- ============ r/cork INTERLUDE (after ch4) ============ -->
+
+  <div class="thread" aria-label="r/cork thread">
+    <p class="thread-head">r/cork · 4 months ago · 47 comments</p>
+
+    <div class="comment">
+      <span class="handle">u/HealyPass1994</span>
+      <p>Anyone know what's going on in Ballywobble? Mate says they've got a commune going. Free food, no money, the whole thing.</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/Ciotog_</span>
+      <p>It's not a commune. It's a co-op. They invoice. <a href="#">link</a></p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/HealyPass1994</span>
+      <p>A co-op that grows free food and doesn't take money?</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/Ciotog_</span>
+      <p>It takes money. It's a co-op. That's what a co-op is.</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/BarryG_NotTheShop</span>
+      <p>I've lived here thirty years and I'm telling you there's more to it. Big greenhouse. New faces. Nobody asking questions. You'd want to be careful.</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/Ciotog_</span>
+      <p>Who owns the greenhouse?</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/HealyPass1994</span>
+      <p>That's what I'm asking</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/Ciotog_</span>
+      <p>No, that's a genuine question. If it's "everyone's", who decides when to sell it? Who's liable if it falls down? Nobody in that thread has answered that.</p>
+    </div>
+
+    <div class="comment deleted">
+      <span class="handle">u/deleted</span>
+      <p>[deleted]</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/HealyPass1994</span>
+      <p>See, this is what I mean. Nobody knows anything.</p>
+    </div>
+
+    <div class="comment">
+      <p class="modnote">[removed by moderator — keep it civil]</p>
+    </div>
+  </div>
+
+  <p>Ines read it on the bus. She showed it to Sam the next morning, in the yard, while the kettle was boiling.</p>
+
+  <p>"HealyPass is Dave Healy," Sam said. "He's not a bad fella. He just likes an argument."</p>
+
+  <p>"He's got forty-seven comments."</p>
+
+  <p>"He's got forty-seven comments because Ciotog kept replying."</p>
+
+  <p>Ines looked at the thread again. The question was still there, three comments down, unanswered: <em>who owns the greenhouse?</em></p>
+
+  <p>"We don't have an answer to that," she said.</p>
+
+  <p>"No," said Sam. "We don't."</p>
+
+  <p>He poured the tea.</p>
+
+  <p>"Mrs Kavanagh will have one by Thursday."</p>
+
+  <hr class="star">
+
+  <p>Mrs Kavanagh had one by Tuesday.</p>
+
+  <p>It was a single page, typed, with a heading that said <strong>OWNERSHIP AND DECISIONS — BALLYWOBBLE ODD JOBS</strong>, and it said, in plain language, that the greenhouse was held by the co-op, that it could not be sold or leased without a general meeting, that any member could inspect the accounts on request, and that if anyone had a question they should ask Mrs Kavanagh and she would write the answer down.</p>
+
+  <p>It was not exciting. It was not ideological. It was the kind of document that would make a good solicitor nod and a bad journalist move on to something else.</p>
+
+  <p>She pinned it to the chapel noticeboard, beside the larder, and she waited to see whether anyone would read it.</p>
+
+  <p>Gerard O'Callaghan read it. He read it twice, and then he said, to nobody in particular, "That's a fair enough answer," which from Gerard was practically a compliment.</p>
+
+  <p>O'Driscoll read it. He didn't say anything, but the following week he sent Sam a note about a supplier for the second greenhouse, which Sam took to mean he had read it and approved.</p>
+
+  <p>Barry G. did not read it. He had already moved on to a thread about the price of diesel.</p>
   </section>
 
   <hr class="star">
@@ -1421,6 +1574,28 @@
     <p>"Mrs Kavanagh would have something to say about it if they did."</p>
 
     <p>Pennyfeather wrote that down, too. He crossed it out, then wrote it down again.</p>
+
+    <p>Before they began, Ines took him to the chapel wall and showed him the ownership note.</p>
+
+    <p>"What's this?" he asked.</p>
+
+    <p>"Someone asked who owns the greenhouse," she said. "So we wrote it down."</p>
+
+    <p>He read it. He read it twice.</p>
+
+    <p>"It's very ordinary," he said.</p>
+
+    <p>"Yes."</p>
+
+    <p>"Most organisations would put this in a constitution."</p>
+
+    <p>"Most organisations have a constitution."</p>
+
+    <p>"And you have a page on a wall."</p>
+
+    <p>"We have a page on a wall, and a meeting every second Thursday, and anyone can ask."</p>
+
+    <p>Pennyfeather wrote something down. He did not cross it out.</p>
 
     <p>The system wasn't perfect. There were arguments about how much different jobs should count for. Some people thought their contributions were undervalued. Others worried that the calculations were becoming too complicated.</p>
 
@@ -1662,7 +1837,7 @@
 
     <p>Hob went on the tea.</p>
 
-    <p>And the next time the visitors came round, they asked whether the changes had helped. The north row was doing better. The vent was working. Hob had, apparently, become an expert in making tea for people who were supposed to be working.</p>
+    <p>And the next time the visitors came round, they asked whether the changes had helped. The north row was doing better. The vent was working. Hob had, apparently, become an expert in making tea for people who are supposed to be working.</p>
 
     <p>The information had travelled in a circle: from people's experience, into a shared picture of what was happening, out to those who could respond, and back again to see whether things had improved.</p>
 
@@ -1808,6 +1983,89 @@
     <p>But he began lending his long ladder to the Shed.</p>
 
     <p>He told everyone it had been his idea.</p>
+
+    <hr class="star">
+
+    <p>Later that week, Ines showed the thread to Mabel.</p>
+
+    <p>It was a new one, posted the morning after the storm.</p>
+  </section>
+
+  <!-- ============ r/cork INTERLUDE (after ch6) ============ -->
+
+  <div class="thread" aria-label="r/cork thread">
+    <p class="thread-head">r/cork · 2 months ago · 89 comments</p>
+
+    <div class="comment">
+      <span class="handle">u/HealyPass1994</span>
+      <p>Ballywobble commune flooded. Saw it on the news. Anyone know if they're alright?</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/BarryG_NotTheShop</span>
+      <p>That's what happens when you build on a flood plain. No planning permission either I'd say.</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/Ciotog_</span>
+      <p>They have permission. It's a co-op. They went through the council.</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/HealyPass1994</span>
+      <p>Genuine question though — who audits the ledger? Like who checks the numbers?</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/BarryG_NotTheShop</span>
+      <p>The girl does it. The young one. Ines. She's eighteen. What happens when she goes to college?</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/Ciotog_</span>
+      <p>That's actually a fair point.</p>
+    </div>
+
+    <div class="comment deleted">
+      <span class="handle">u/deleted</span>
+      <p>[deleted]</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/HealyPass1994</span>
+      <p>See that's the thing. It's grand until it isn't.</p>
+    </div>
+  </div>
+
+  <p>Mabel read it twice. Then she put the phone down on the table and looked at Ines.</p>
+
+  <p>"Barry's right," she said.</p>
+
+  <p>Ines looked at her.</p>
+
+  <p>"Not about the flood plain," said Mabel. "About you. What happens when you go to college?"</p>
+
+  <p>Ines opened her mouth to answer, and then closed it.</p>
+
+  <p>"I hadn't thought about it," she said.</p>
+
+  <p>"No," said Mabel. "Neither had I."</p>
+
+  <p>She picked up the phone again and read the thread to the end.</p>
+
+  <p>"We'll need a second pair of hands on the Ledger," she said. "Somebody who'll still be here."</p>
+
+  <p>"Who?"</p>
+
+  <p>Mabel looked at her.</p>
+
+  <p>"You've been teaching that lad from Skibbereen the forum. Teach him the Ledger as well."</p>
+
+  <p>Ines thought about it. Donal had come back three times since the gathering. He was quiet, careful, and he wrote things down the way she did. He had asked, once, whether the Ledger could be kept on paper and on a computer at the same time, and she had said yes, and he had nodded and written that down too.</p>
+
+  <p>"All right," she said.</p>
+
+  <p>"Not all right," said Mabel. "Done."</p>
   </section>
 
   <hr class="star">
@@ -2271,6 +2529,60 @@
     <p>Nobody made a fuss. That was the point.</p>
 
     <p>But Mabel noticed that Gerard was smiling, and that he was trying very hard not to be seen doing it.</p>
+
+    <hr class="star">
+
+    <p>That evening, Aoife came to find Ines.</p>
+
+    <p>She had a printout in her hand. It was a screenshot of a thread, and she put it on the table between them without saying anything.</p>
+
+    <p>The title was: <em>The Ballywobble shed has a 'face' and she's 34.</em></p>
+
+    <p>Ines read it. It named Aoife as the person who had made the flyer, the person who answered the phone, the person who was, in the words of the thread, "the only one with a name attached to anything".</p>
+
+    <p>"Who wrote it?" Ines asked.</p>
+
+    <p>"Nobody I know," said Aoife. "That's not the point."</p>
+
+    <p>She sat down.</p>
+
+    <p>"The point is, they're right. I made the flyer. I put my name on it. I'm the only one who answers the phone. If someone wants to complain about the Shed, they complain to me."</p>
+
+    <p>"We can change that," said Ines.</p>
+
+    <p>"I know."</p>
+
+    <p>They sat in silence for a moment.</p>
+
+    <p>"I'll ask Piotr and Tunde," Aoife said. "They're already there every week. They can share the phone."</p>
+
+    <p>Ines looked at her.</p>
+
+    <p>"You're not upset?"</p>
+
+    <p>"I'm furious," said Aoife. "But not at the thread. At myself. I made the flyer because I wanted people to know about us. I didn't think about what it would mean to be the only name on it."</p>
+
+    <p>She folded the printout and put it in her pocket.</p>
+
+    <p>"It'll be better with three names," she said. "Less interesting."</p>
+
+    <p>"Less interesting is good," said Ines.</p>
+
+    <p>"Yes," said Aoife. "That's what I'm learning."</p>
+
+    <hr class="star">
+
+    <p>Two weeks later, the Shed pinned a second note beside the ownership page on the chapel wall. It was headed <strong>THE LEDGER — WHAT IT IS AND WHAT IT ISN'T</strong>, and it was two paragraphs long. It said what the Ledger recorded, what it did not record, that it was not money, that it could not be exchanged for money, and that anyone who wanted to see it could ask Ines or Donal and they would bring it to the chapel on a Thursday.</p>
+
+    <p>It was not exciting. It was not ideological. It was the kind of document that would make a suspicious person less suspicious and a determined person more determined.</p>
+
+    <p>Hob read it. He read it twice, and then he said, to nobody in particular, "That's fair enough," which from Hob was practically a speech.</p>
+
+    <p>Gerard read it. He didn't say anything, but the following week he brought another bag of nails to the repair evening, which was his way of agreeing with things.</p>
+
+    <p>O'Driscoll read it. He sent Sam a note about a supplier for the second greenhouse's glass, which Sam took to mean he had read it and approved.</p>
+
+    <p>Barry G. did not read it. He had already moved on to a thread about the price of diesel.</p>
   </section>
 
   <hr class="star">
@@ -2793,87 +3105,194 @@
 
     <p>Mabel sat beside the door, watching the discussion.</p>
 
-    <p>She had a cup of tea in one hand and a small notebook in the other.</p>
+    <p>She had a cup of tea in one hand and, in the other, a phone with the r/cork thread open on it. She scrolled to the bottom, read the latest comment, and put the phone face-down on the table.</p>
 
-    <p>Ines came over.</p>
+    <p>"Anything?" Ines asked.</p>
 
-    <p>"What are you writing?"</p>
+    <p>"Same as ever," said Mabel. "Some fella says we're a cult."</p>
 
-    <p>"Nothing."</p>
+    <p>"Are we?"</p>
 
-    <p>"Looks like something."</p>
+    <p>"No."</p>
 
-    <p>Mabel closed the notebook.</p>
+    <p>"What did you say?"</p>
 
-    <p>"Just keeping track."</p>
+    <p>"I didn't say anything. I put the phone down."</p>
 
-    <p>"Of what?"</p>
+    <p>She picked up her tea.</p>
 
-    <p>Mabel looked around the room.</p>
-
-    <p>At the people arguing, laughing, disagreeing and occasionally getting things done.</p>
-
-    <p>"Of what's possible," she said.</p>
-
-    <p>And then she went to put the kettle on.</p>
+    <p>"That's the thing about the internet," she said. "It's grand until you answer it."</p>
   </section>
+
+  <!-- ============ r/cork INTERLUDE (after epilogue) ============ -->
+
+  <div class="thread" aria-label="r/cork thread">
+    <p class="thread-head">r/cork · 2 years later · 212 comments</p>
+
+    <div class="comment">
+      <span class="handle">u/HealyPass1994</span>
+      <p>Ballywobble thread, two years on. Just to say I was wrong about the commune thing. It's a co-op. My aunt gets a box from them every week and she thinks they're great.</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/BarryG_NotTheShop</span>
+      <p>No smoke without fire. You don't build a second greenhouse without something going on.</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/HealyPass1994</span>
+      <p>They're building a second one because the first one worked, Barry.</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/Mary_O_Shea_Drumroe</span>
+      <p>We're doing something similar in Drumroe. Different set-up, though. Ours is mostly deliveries. Working grand so far.</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/BarryG_NotTheShop</span>
+      <p>It's the thin end of the wedge.</p>
+    </div>
+
+    <div class="comment">
+      <span class="handle">u/HealyPass1994</span>
+      <p>It's a shed, Barry.</p>
+    </div>
+
+    <div class="comment deleted">
+      <span class="handle">u/deleted</span>
+      <p>[deleted]</p>
+    </div>
+
+    <div class="comment">
+      <p class="modnote">[locked — nothing more to say here]</p>
+    </div>
+  </div>
+
+  <p>Mabel read it on the bus home from Drumroe. She showed it to Ines.</p>
+
+  <p>"Dave Healy's come round," she said.</p>
+
+  <p>"He has."</p>
+
+  <p>"Barry hasn't."</p>
+
+  <p>"No."</p>
+
+  <p>Mabel put the phone away.</p>
+
+  <p>"Ah well," she said. "You can't win them all. You can only outlast them."</p>
+
+  <hr class="star">
 
   <!-- ============ APPENDIX ============ -->
 
   <section id="appendix" class="appendix">
     <p class="kicker">Appendix</p>
-    <h2>A Note on the Underlying Concepts</h2>
+    <h2>A Note on the Concepts</h2>
+
+    <p>The story uses a handful of terms that have ordinary meanings and, in Ballywobble, slightly more specific ones. None of them are new. All of them have been tried before, in different places, under different names.</p>
 
     <table>
       <thead>
-        <tr><th scope="col">Story element</th><th scope="col">Subsystem</th></tr>
+        <tr>
+          <th>Term</th>
+          <th>What it means in the story</th>
+          <th>Real-world analogue</th>
+        </tr>
       </thead>
       <tbody>
-        <tr><td>Barn meetings, pinned objections, deliberation and the annoyance gauge</td><td>CDS &mdash; Collaborative Decision System</td></tr>
-        <tr><td>Shared Notebook and reusable designs</td><td>OAD &mdash; Open Access Design</td></tr>
-        <tr><td>Rota, task sign-ups and temporary working groups</td><td>COS &mdash; Cooperative Organization System</td></tr>
-        <tr><td>Contribution records, ecological costing and fading credits</td><td>ITC &mdash; Integral Time Credits</td></tr>
-        <tr><td>Household visits and feedback loops</td><td>FRS &mdash; Feedback &amp; Review System</td></tr>
-        <tr><td>Greens becoming cheaper through improved production</td><td>Post-scarcity trajectory</td></tr>
-        <tr><td>Ballywobble Odd Jobs and its ordinary bank account</td><td>Interface cooperative</td></tr>
-        <tr><td>Public arguments over labels</td><td>Transition, legitimacy and framing</td></tr>
+        <tr>
+          <td>The Shed</td>
+          <td>The physical shed, and by extension the informal institution the village builds around it.</td>
+          <td>A community group, a men's shed, a residents' association.</td>
+        </tr>
+        <tr>
+          <td>Ballywobble Odd Jobs</td>
+          <td>The registered co-op that invoices in euros and pays tax. The outside-facing entity.</td>
+          <td>A workers' co-op, a social enterprise.</td>
+        </tr>
+        <tr>
+          <td>The Ledger</td>
+          <td>A record of time given and received, in credits that fade. Not money, not a debt.</td>
+          <td>Time banking, LETS schemes, mutual credit.</td>
+        </tr>
+        <tr>
+          <td>The one-way valve</td>
+          <td>The rule that credits cannot be exchanged for euros, or vice versa. Keeps the two systems separate.</td>
+          <td>Complementary currency design; demurrage.</td>
+        </tr>
+        <tr>
+          <td>The Board</td>
+          <td>The digital board for proposals and objections, with an annoyance gauge. A facilitation tool disguised as a joke.</td>
+          <td>Consent-based decision-making; sociocracy; the "temperature check".</td>
+        </tr>
+        <tr>
+          <td>The Rota</td>
+          <td>The list that divides work. The nearest thing the Shed has to a manager, and not a person.</td>
+          <td>Self-organising teams; holacracy; the chores rota.</td>
+        </tr>
+        <tr>
+          <td>The Notebook</td>
+          <td>Ines's design notebook: materials, energy, labour, environmental cost. Distinct from the Ledger.</td>
+          <td>Life-cycle assessment; appropriate technology; the Whole Earth Catalog.</td>
+        </tr>
+        <tr>
+          <td>The Integral Site</td>
+          <td>The online forum where plans are shared. Not named grandly, because it isn't grand.</td>
+          <td>Permaculture forums; repair cafés; open-source hardware communities.</td>
+        </tr>
       </tbody>
     </table>
+
+    <p>None of this is a blueprint. The story is not an argument that any of it would work everywhere, or that it should be tried everywhere. It is an argument that it worked once, in one village, for a while, and that the people involved were ordinary and the reasons were ordinary and the arithmetic was ordinary. That is all.</p>
   </section>
 
 </main>
 
 <footer class="colophon">
-  <p><em>The Greenhouse at Ballywobble.</em></p>
-  <p>Set in your browser's serif. No tracking, no cookies, no script beyond the reading bar.</p>
+  <p><strong>The Greenhouse at Ballywobble</strong> — a story about a shed, a lettuce, and a system nobody called a system.</p>
+  <p>Canonical text: this file. Story bible: <code>STORY.md</code>. Editing rules: <code>AGENTS.md</code>. Chapter fragments: <code>chapters/</code>.</p>
 </footer>
 
 <script>
-(function () {
-  var bar = document.querySelector('.progress');
-  var sections = Array.prototype.slice.call(document.querySelectorAll('section[id]'));
-  var links = {};
-  Array.prototype.forEach.call(document.querySelectorAll('nav.toc a'), function (a) {
-    links[a.getAttribute('href').slice(1)] = a;
-  });
-
-  function update() {
-    var h = document.documentElement;
-    var max = h.scrollHeight - h.clientHeight;
-    bar.style.transform = 'scaleX(' + (max > 0 ? h.scrollTop / max : 0) + ')';
-
-    var current = sections[0];
-    for (var i = 0; i < sections.length; i++) {
-      if (sections[i].getBoundingClientRect().top <= 140) current = sections[i];
+  // Progress bar. Kept minimal; no dependencies.
+  (function () {
+    var bar = document.querySelector('.progress');
+    if (!bar) return;
+    function update() {
+      var h = document.documentElement;
+      var max = h.scrollHeight - h.clientHeight;
+      var p = max > 0 ? h.scrollTop / max : 0;
+      bar.style.transform = 'scaleX(' + p + ')';
     }
-    for (var id in links) links[id].classList.remove('current');
-    if (current && links[current.id]) links[current.id].classList.add('current');
-  }
+    document.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
 
-  window.addEventListener('scroll', update, { passive: true });
-  window.addEventListener('resize', update);
-  update();
-})();
+  // TOC current-section highlight. Optional, degrades gracefully.
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a'));
+    if (!links.length || !('IntersectionObserver' in window)) return;
+    var map = {};
+    links.forEach(function (a) {
+      var id = a.getAttribute('href').slice(1);
+      if (id) map[id] = a;
+    });
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && map[e.target.id]) {
+          links.forEach(function (a) { a.classList.remove('current'); });
+          map[e.target.id].classList.add('current');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    Object.keys(map).forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) obs.observe(el);
+    });
+  })();
 </script>
 
 </body>
