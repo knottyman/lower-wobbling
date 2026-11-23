@@ -40,6 +40,9 @@ misreading.
 - Not preachy about climate, community, or mutual aid. Show, don't tell.
 - Not a satire of Cork, Cork people, or Irish online life. The chorus is
   frightened, not stupid.
+- Not a textbook. It teaches integral decision-making by showing it, never
+  by explaining it. The moment a character lectures the reader on
+  sociocracy, the book has failed.
 
 ## Structure
 
@@ -49,7 +52,7 @@ misreading.
 | 1 | the-lettuce | Chapter One | Inciting incident: lettuce, Mabel, Ines, the bucket. |
 | 2 | the-money | Chapter Two | Mrs Kavanagh; Odd Jobs co-op; the one-way valve. |
 | 3 | not-convinced | Chapter Three | McKenna, O'Driscoll; the supermarket letter. |
-| 4 | the-greenhouse | Chapter Four | The gathering, the Board, the Rota, the build. |
+| 4 | the-greenhouse | Chapter Four | The gathering, the Board, the Rota, the build. **Both gauge modes demonstrated here.** |
 | 5 | the-ledger | Chapter Five | The Ledger explained; Hob declines. |
 | 6 | first-winter | Chapter Six | The storm; Gerard's reserve argument. |
 | 7 | the-ladders | Chapter Seven | O'Driscoll's fear; the shelves. |
@@ -84,14 +87,18 @@ it with her.
 meetings, "stakeholders", petitions. Difficult to stop once she decides
 something is daft. Speaks in short declaratives. Dry. Never sentimental
 aloud. Her arc: from private grumbler to the person who holds the
-structure together without ever claiming to.
+structure together without ever claiming to. She insists she hates
+meetings and is, by ch4, effectively chairing them; the gap between what
+she says and what she does is deliberate and is a running joke. Do not
+resolve it by having her admit it.
 
 **Ines** (18, environmental science student, Portuguese-West Cork, parents
 run The Prassa café). The systems mind. Reads forums (the Integral Site),
 writes things down, designs the Ledger and the Board. Her arc: from
 enthusiast with a notebook to someone who understands that scaling means
 *changing*, not copying. Never becomes a leader; stays a translator. She
-is the author's temptation to lecture, and the book must resist it.
+is the author's temptation to lecture, and the book must resist it. She
+facilitates the Board but never explains it.
 
 **Sam Watts** (42, mechanic, three kids, wife manages accounts). The
 reluctant joiner. "I'm not joining anything." Good at work, bad at
@@ -118,7 +125,10 @@ away → talks Hob into signing. "He told everyone it had been his idea."
 Arc: from "you're giving things away" → supplier → advisor on glass
 thickness. Never joins. "I'm not a member. I'm just a shop." His arc is
 the story's argument that the Shed is not zero-sum. He reads the notes
-the Shed pins up, even when he doesn't admit it.
+the Shed pins up, even when he doesn't admit it. He is also the instrument
+by which the consent mode of the gauge is taught to the reader (ch4): he
+asks the difference between an opinion and an objection, and Ines answers
+him plainly.
 
 **Mr Reginald Pennyfeather** (bank Risk Assessment Officer). The frame.
 Earnest, not villainous. His report ends "It is a shed." Comic function:
@@ -233,7 +243,7 @@ real r/cork moderator. Use slurs. Reproduce the anti-Muslim rhetoric the
 author has seen online — the chorus's fear is *general* ("these people",
 "the newcomers", "you know the type") and is corrected by named villagers
 ("Tunde is a nurse", "Piotr fixed your lawnmower"). Win: the chorus is
-never definitively defeated; it quiets, it moves on, it fixes on something
+never definitively defeated; it quietens, it moves on, it fixes on something
 else. That is the honest ending. Be quoted by a character as if it were a
 text: characters *react* to it, they don't analyse it. Appear more than
 once per two chapters.
@@ -271,8 +281,30 @@ be reflected in the prose, not just the interludes):
   in euros, pays tax, and buys what the Shed can't make. This is the
   *outside-facing* entity. Don't confuse it with the Ledger.
 - **The Board** — the digital board for proposals/objections, with the
-  annoyance gauge (ANNOYED / VERY ANNOYED / EXTREMELY ANNOYED / AGREED).
-  It is a joke that is also a real facilitation tool. Keep both.
+  annoyance gauge. It is a joke that is also a real facilitation tool.
+  Keep both. See the gauge rule below.
+- **The annoyance gauge** — the little readout on the Board tablet. It
+  has **two modes** and both are canon:
+  - **Conflict mode** (during discussion): reads *ANNOYED / VERY ANNOYED
+    / EXTREMELY ANNOYED*. Its function is to trigger a change of format
+    (break into smaller groups, report back). It is not a vote and not a
+    scoreboard. When it climbs, the facilitator changes *how* people are
+    talking, not *what* they are deciding.
+  - **Consent mode** (at a decision): reads *AGREED*, or shows a block
+    if someone has a principled objection. The facilitator asks "any
+    principled objections?"; an opinion is something you'd like changed,
+    an objection is something you can't live with; an objection stops the
+    proposal and it is amended. Nobody wins; everyone can live with it.
+  - Both modes are demonstrated in ch4: conflict mode during the
+    argument (the gauge climbs, Mabel breaks the room into groups), and
+    consent mode after the groups report back (Ines puts the proposal on
+    the Board, O'Driscoll asks the difference between an opinion and an
+    objection, the gauge reads AGREED).
+  - **Teach it through dialogue, never explanation.** O'Driscoll is the
+    instrument: he is confused, he asks the practical question, Ines
+    answers it plainly. Do not add a scene where a character explains
+    sociocracy to the reader. Do not add a third mode, a numerical scale,
+    or a colour code. It is a crude thermometer that works; keep it crude.
 - **The Rota** — "the nearest thing Ballywobble had to a manager, and it
   wasn't a person. It was a list." Load-bearing joke. Don't explain it.
 - **The Notebook** — Ines's design notebook: materials, energy, labour,
@@ -293,8 +325,9 @@ Roughly two years, plus a prologue frame and an epilogue frame.
 - Ch1: spring. Bucket → three lettuces → two eaten by slugs.
 - Ch2: shortly after; Mrs Kavanagh formalises Odd Jobs.
 - Ch3: McKenna's chiller; O'Driscoll confrontation; supermarket letter.
-- Ch4: the gathering; greenhouse planned and built. Donal appears. The
-  first r/cork thread (i2) appears two days after the build.
+- Ch4: the gathering; greenhouse planned and built. Donal appears. Both
+  gauge modes demonstrated. The first r/cork thread (i2) appears two days
+  after the build.
 - Ch5: the Ledger explained; Hob declines; O'Leary's gutters; Gerard
   reads the Ledger; Hob still declines. Pennyfeather sees the ownership
   note on the chapel wall.
@@ -339,15 +372,19 @@ The Ledger explainer exists from ch9 onward.
 - Weather as West Cork realism: damp, mist, salt, turf smoke.
 - "You can only outlast them." (Mabel, epilogue.) The book's answer to
   the chorus. Do not repeat it.
+- The gauge climbing and falling. Use it as a barometer of the room, not
+  as a plot device.
 
 ## Style rules for editors
 
 1. **Do not explain the system.** If a character understands it, show them
-   using it. Never have a character deliver a lecture on mutual aid.
+   using it. Never have a character deliver a lecture on mutual aid or
+   sociocracy.
 2. **Keep the narrator's distance.** The narrator notices and reports; it
    does not editorialise about capitalism.
 3. **Dialogue does the work.** Where possible, convert exposition into
-   exchange. Mabel is the best instrument for this.
+   exchange. Mabel is the best instrument for this; O'Driscoll is the
+   best instrument for teaching the decision system.
 4. **Comedy from understatement.** No puns in narration. No winking.
 5. **New characters must have a function**, not a quirk. The story's cast
    is already large; add people only if they change a decision.
@@ -366,6 +403,9 @@ The Ledger explainer exists from ch9 onward.
 12. **The chorus is not a strawman.** Every r/cork thread must contain at
     least one fair criticism or one poster who is right. If an edit
     removes the last fair criticism from a thread, the edit is wrong.
+13. **The gauge has two modes, not more.** Conflict during discussion,
+    consent at decision. Show both at least once. Teach consent through
+    dialogue. Never explain it in narration.
 
 ## Open threads (deliberate; do not resolve without author approval)
 
@@ -382,6 +422,9 @@ The Ledger explainer exists from ch9 onward.
   with no speech, is an **open authorial decision**. Do not add such a
   moment without explicit approval; if approved, place it in the ch8
   thread and keep it under six lines.
+- The second greenhouse's fate. It is proposed in the epilogue and
+  blocked at the meeting (O'Driscoll's glass objection). Do not resolve
+  whether it gets built. That's the point.
 
 ## Appendix (concepts glossary)
 
@@ -389,3 +432,8 @@ The appendix in the text is a table of concepts (Ledger, Rota, Board,
 one-way valve, Notebook, Integral Site, etc.). Keep it consistent with
 this bible. If you add a concept to the story, add it to the appendix
 *and* to this bible.
+
+The appendix should also mention the gauge, if it is expanded: the real
+analogue is consent-based decision-making (sociocracy, consent rounds,
+temperature checks). Keep the entry short; the appendix is a glossary,
+not a manual.
