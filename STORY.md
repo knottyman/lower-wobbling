@@ -3,6 +3,10 @@
 > Read this before editing any chapter. It is the whole-arc context.
 > The canonical text lives in `index.html`. Chapter fragments in `chapters/`
 > are derived from it. See `AGENTS.md` for the editing workflow.
+>
+> The online chorus (the r/cork layer) has its own detailed bible. If you
+> have it as a separate file, read it after this one. If not, §6 below is
+> the summary that matters.
 
 ## Logline
 
@@ -34,6 +38,8 @@ misreading.
 - Not a socialist triumph or a capitalist critique. The book deliberately
   refuses to land on either side. Keep that ambiguity.
 - Not preachy about climate, community, or mutual aid. Show, don't tell.
+- Not a satire of Cork, Cork people, or Irish online life. The chorus is
+  frightened, not stupid.
 
 ## Structure
 
@@ -48,14 +54,29 @@ misreading.
 | 6 | first-winter | Chapter Six | The storm; Gerard's reserve argument. |
 | 7 | the-ladders | Chapter Seven | O'Driscoll's fear; the shelves. |
 | 8 | supply-chain | Chapter Eight | O'Driscoll becomes a supplier; the valve holds. |
-| 9 | the-visitors | Chapter Nine | Scaling questions; Hob signs. |
+| 9 | the-visitors | Chapter Nine | Scaling questions; Hob signs; Aoife stung. |
 | 10 | next-village | Chapter Ten | Drumroe; a different set of problems. |
 | 11 | delivery-note | Chapter Eleven | The private delivery note; scaling ≠ copying. |
 | — | epilogue | Epilogue | Pennyfeather's report ("It is a shed."). |
 | ◆ | appendix | (none) | Concepts glossary. |
 
-Interlude: a `noticeboard` div sits between ch1 and ch2 (Barry G. thread).
-It is canon. Do not delete it; if you edit it, keep the forum-poster voice.
+Three interludes sit between sections, outside the `<section>` structure:
+
+| # | Location | Type | Function |
+|---|----------|------|----------|
+| i1 | between ch1 and ch2 | village noticeboard | Establishes Barry G.; the village's own crank. |
+| i2 | between ch4 and ch5 | r/cork thread | First r/cork appearance; the "who owns the greenhouse?" criticism; produces the ownership note. |
+| i3 | between ch6 and ch7 | r/cork thread | The "who audits the Ledger?" criticism; produces Donal as second record-keeper. |
+| i4 | inside ch9 (after Hob signs) | r/cork thread (screenshot, described) | The Aoife sting; produces shared contact role and the Ledger explainer. |
+| i5 | after epilogue | r/cork thread | The thread outlives the story; HealyPass comes round; Barry doesn't. |
+
+Interludes i1–i3 and i5 are marked up as `<div class="noticeboard">` or
+`<div class="thread">`. Interlude i4 is described in prose inside ch9
+(Aoife brings a printout) rather than rendered as a thread block; the
+printout text is the *title* of the thread and the fact that Aoife is
+named. Do not convert i4 into a full `.thread` block without the author's
+say-so — the point is that Aoife sees it alone, not that the reader reads
+it with her.
 
 ## Characters
 
@@ -69,7 +90,8 @@ structure together without ever claiming to.
 run The Prassa café). The systems mind. Reads forums (the Integral Site),
 writes things down, designs the Ledger and the Board. Her arc: from
 enthusiast with a notebook to someone who understands that scaling means
-*changing*, not copying. Never becomes a leader; stays a translator.
+*changing*, not copying. Never becomes a leader; stays a translator. She
+is the author's temptation to lecture, and the book must resist it.
 
 **Sam Watts** (42, mechanic, three kids, wife manages accounts). The
 reluctant joiner. "I'm not joining anything." Good at work, bad at
@@ -79,11 +101,14 @@ shouldn't promise what we haven't got."
 **Hob** (Robert Hobbs; older; fixes things; says little). The conscience.
 Refuses the Ledger for two years because he has seen debt poison families.
 His arc: declines → watches → signs, quietly, when Gerard talks to him.
-He is the story's moral centre and must never become a spokesman.
+He is the story's moral centre and must never become a spokesman. He
+signs in ch9, not before. He reads the Ledger every week after signing,
+the way he reads manuals.
 
 **Mrs Kavanagh** (retired accountant; red pen; ledger with paper roll).
-The rules. "Money comes in at this door." The one-way valve is hers. Her
-arc: none — she is a fixed point of rigour, and that is the joke.
+The rules. "Money comes in at this door." The one-way valve is hers. She
+also writes the ownership note after the first r/cork thread. Her arc:
+none — she is a fixed point of rigour, and that is the joke.
 
 **Gerard O'Callaghan** (retired agricultural contractor; three sheds;
 hoarder). The fear. Arc: from suspicion → reserve argument → gives things
@@ -92,26 +117,39 @@ away → talks Hob into signing. "He told everyone it had been his idea."
 **Mr O'Driscoll** (hardware shop, 26 years). The threatened incumbent.
 Arc: from "you're giving things away" → supplier → advisor on glass
 thickness. Never joins. "I'm not a member. I'm just a shop." His arc is
-the story's argument that the Shed is not zero-sum.
+the story's argument that the Shed is not zero-sum. He reads the notes
+the Shed pins up, even when he doesn't admit it.
 
 **Mr Reginald Pennyfeather** (bank Risk Assessment Officer). The frame.
 Earnest, not villainous. His report ends "It is a shed." Comic function:
 he is the reader who wants a system and finds one that isn't.
 
-**Aoife** (34, marketing diploma she never used). The amplifier. Makes
-the flyer. Minor but load-bearing: she is how the Shed becomes legible.
+**Aoife** (34, marketing diploma she never used). The amplifier, then the
+stung one. Makes the flyer; becomes the only named contact; is named in an
+r/cork thread as "the face" of a leaderless thing. Her arc: from visibility
+→ sting → sharing the contact role with Piotr and Tunde → "less
+interesting is good." She does not quit. She does not break down. She
+changes something structural and stays.
 
 **Piotr** (builder, Polish). Quiet competence. Fixes the beds. Becomes a
-fixture. Never a plot engine; his presence is the point.
+fixture. Also, after ch9, shares the contact phone with Aoife and Tunde.
+Never a plot engine; his presence is the point.
 
 **Tunde** (Nigerian nurse, community hospital). Quiet competence. Fan,
-splicing, tea. Same function as Piotr: the story's answer to Barry G.
+splicing, tea. Shares the contact role with Aoife and Piotr. Same function
+as Piotr: the story's answer to the chorus's fear.
 
-**Barry G.** (noticeboard only, never appears in prose). The online
-misreader. He exists to be answered by Sheila P. and Mabel.
+**Donal** (Skibbereen, 19–20, sustainable agriculture student). The next
+generation and the second record-keeper. Appears in ch4; returns after
+ch6 to learn the Ledger from Ines; is referenced in ch9 and the epilogue
+as one of the two people who can bring the Ledger to the chapel. His
+function is structural, not ornamental — he is the answer to "what
+happens when Ines goes to college?"
 
 **Mary O'Shea** (Drumroe, retired community nurse). The next village's
 Mabel-equivalent, but different: her problem is delivery, not production.
+She appears in ch10–11 and posts as `u/Mary_O_Shea_Drumroe` in the
+epilogue thread.
 
 **Andrew** (Drumroe, ex-local-government). Wants a system, a rota, a
 responsible person. The comic foil in chs 10–11. He is not wrong; he is
@@ -120,8 +158,106 @@ just early.
 **Niamh Walsh** (Drumroe grower). "I said a few." Guards against the
 volunteer becoming trapped by the thing they volunteered for.
 
-**Donal** (Skibbereen, 19–20, sustainable agriculture student). The next
-generation. Minor; appears in ch4. A seed for a sequel, not a plot.
+**Barry G.** (noticeboard and r/cork only; never appears in prose). The
+online misreader. He is the same man in both places; the r/cork handle
+`u/BarryG_NotTheShop` is his attempt at anonymity, and the "NotTheShop"
+suffix is a running joke among the Shed members, who know exactly who he
+is. He is frightened, not malicious, and must remain pitiable. He does not
+have a redemption scene. He quietens. That is all.
+
+## The online chorus (r/cork layer)
+
+The chorus is canon. Six online moments across the book: one village
+noticeboard (i1), four r/cork threads (i2, i3, i4, i5), and the general
+chatter referenced in the prologue. It exists to dramatise the book's
+central tension: a practical, local, non-ideological project being read
+through an ideological lens by people who are frightened, and the Shed's
+refusal to win the argument on the internet's terms.
+
+**The rule of the chorus.** Every interlude must contain at least one of:
+
+- (a) a fair criticism the Shed cannot immediately answer;
+- (b) a sting — a comment that lands personally on a named Shed member;
+- (c) a poster who is right about something, even if unpleasantly so.
+
+And at least one of:
+
+- (d) a Shed member's reaction that is not smug;
+- (e) a poster the Shed members recognise and like (or pity);
+- (f) a correction, deletion, mod note, or derail that shows the thread
+  is a real place with its own weather.
+
+If an interlude has only jokes at the posters' expense, cut it.
+
+**Recurring posters.** Keep the cast small. Six recurring handles:
+
+- `u/HealyPass1994` — the anxious asker (Dave Healy, went to school with
+  Sam, works in insurance in town). Asks the question everyone is
+  thinking. Never cruel. Accepts a fact when corrected. Arc: commune →
+  co-op → defends the Shed in the epilogue thread without noticing.
+- `u/Ciotog_` — the pedant. Knows the difference between a co-op and a
+  commune and cannot let it go. Corrects facts, misses feelings, is
+  occasionally wrong. Arc: corrects the same error in every thread,
+  increasingly wearily; by the epilogue has stopped replying, and the
+  error stands uncorrected. That silence is the point.
+- `u/BarryG_NotTheShop` — the village's own crank (same man as the
+  noticeboard Barry G.). "I'm only saying what everyone's thinking."
+  Capitalises Random Words. Posts at 3am. Frightened of change and
+  expressing it badly. Never villainous. Arc: mild suspicion → louder →
+  a post that goes too far and is gently corrected → quiet.
+- `u/AoifeC_` — the stung one. Posts rarely, carefully, in complete
+  sentences, with a professional tone that reads as defensive. Deletes
+  comments. Edits them to add "not looking for a fight". Arc: named as
+  "the woman in charge" → stung → trains two others to share the contact
+  role → posts one calm, unbothered reply that ends the thread → stops
+  posting.
+- `u/InesFromThePrassa` — the lurker who sometimes speaks. Reads
+  everything, posts almost nothing. When she does, it's precise and
+  slightly too clever, and she regrets it. She never wins an argument
+  online. Arc: reads → drafts → posts once → gets piled on → stops →
+  reads again, calmer.
+- `u/Mary_O_Shea_Drumroe` — the next village's Mary. Appears late (ch10
+  onward). Asks practical questions in the middle of ideological threads.
+  Ignores the ideological posts entirely. Arc: asks one practical
+  question → returns in the epilogue with "we're doing it differently
+  here, it's working grand" → signs off.
+
+**Walk-ons** (use sparingly, never recur): `u/deleted` (a deleted
+comment, used once, at the moment a thread is about to turn ugly); a mod
+note (`[removed by moderator — keep it civil]`, used twice); a one-off
+expert (someone who knows about co-op law or glass or soil, posts once,
+is ignored — use once, in ch8).
+
+**What the chorus must never do.** Name a real person, real business, or
+real r/cork moderator. Use slurs. Reproduce the anti-Muslim rhetoric the
+author has seen online — the chorus's fear is *general* ("these people",
+"the newcomers", "you know the type") and is corrected by named villagers
+("Tunde is a nurse", "Piotr fixed your lawnmower"). Win: the chorus is
+never definitively defeated; it quiets, it moves on, it fixes on something
+else. That is the honest ending. Be quoted by a character as if it were a
+text: characters *react* to it, they don't analyse it. Appear more than
+once per two chapters.
+
+**The structural changes the chorus produces** (these are canon and must
+be reflected in the prose, not just the interludes):
+
+1. After i2 ("who owns the greenhouse?"): Mrs Kavanagh writes a
+   one-page ownership note, pinned in the chapel. It says the greenhouse
+   is held by Odd Jobs, that it can't be sold without a general meeting,
+   and that any member can inspect the accounts. It is boring, and that
+   is the point. (Referenced in ch5.)
+2. After i3 ("who audits the Ledger? what happens when Ines leaves?"):
+   Ines begins training Donal as a second record-keeper. (Referenced in
+   ch9 and ch10.)
+3. After i4 ("Aoife is the face"): Aoife trains Piotr and Tunde to share
+   the contact role. She keeps making flyers but stops being the only
+   name on them. (Referenced in ch9.)
+4. After i4 (the paranoid misreading of the Ledger): the Shed pins a
+   plain-language explainer beside the ownership note. Two paragraphs. It
+   says what the Ledger is, what it isn't, and that anyone can read it on
+   request. (Referenced in the epilogue.)
+5. Epilogue: none. The thread outlives the story. The Shed has stopped
+   trying to win it.
 
 ## Key concepts (must stay consistent)
 
@@ -157,26 +293,37 @@ Roughly two years, plus a prologue frame and an epilogue frame.
 - Ch1: spring. Bucket → three lettuces → two eaten by slugs.
 - Ch2: shortly after; Mrs Kavanagh formalises Odd Jobs.
 - Ch3: McKenna's chiller; O'Driscoll confrontation; supermarket letter.
-- Ch4: the gathering; greenhouse planned and built. Donal appears.
+- Ch4: the gathering; greenhouse planned and built. Donal appears. The
+  first r/cork thread (i2) appears two days after the build.
 - Ch5: the Ledger explained; Hob declines; O'Leary's gutters; Gerard
-  reads the Ledger; Hob still declines.
+  reads the Ledger; Hob still declines. Pennyfeather sees the ownership
+  note on the chapel wall.
 - Ch6: greenhouse finished March; first harvest May; storm "the first
   winter" (the book's timeline is loose here — the storm is the first
-  *winter after* the build, i.e. ~18 months in).
+  *winter after* the build, i.e. ~18 months in). The second r/cork thread
+  (i3) appears the morning after the storm. Ines agrees to train Donal as
+  second record-keeper.
 - Ch7: O'Driscoll, the bolts, the shelves.
 - Ch8: O'Driscoll becomes the most reliable supplier. "Best quarter in
-  five years."
+  five years." The one-off expert appears in a thread around here
+  (referenced only; not a full interlude).
 - Ch9: visitors; Andrew's first visit; Hob signs (after Gerard talks to
-  him).
+  him); Aoife is stung by the "she's 34" thread (i4) and shares the
+  contact role; the Ledger explainer is pinned up.
 - Ch10: Drumroe; Mary; Niamh; the first Saturday.
 - Ch11: the private delivery note; scaling ≠ copying.
 - Epilogue: Pennyfeather files the report; the internet moves on; the
-  second greenhouse is proposed.
+  second greenhouse is proposed; the final r/cork thread (i5) shows
+  HealyPass defending the Shed, Barry still suspicious, Mary signing off.
+  Mabel: "You can only outlast them."
 
 Continuity anchors: the greenhouse is built *after* ch4 and produces by
 ch6. Hob signs in ch9, *after* declining in ch5. O'Driscoll supplies in
 ch8, *after* confrontation in ch3. Gerard gives things away in ch6, *after*
-hoarding in ch1–3, and talks to Hob in ch9.
+hoarding in ch1–3, and talks to Hob in ch9. Donal starts training on the
+Ledger *after* ch6, not before. Aoife shares the contact role *after* i4,
+not before. The ownership note exists from between ch4 and ch5 onward.
+The Ledger explainer exists from ch9 onward.
 
 ## Recurring motifs (use sparingly; they are seasoning, not structure)
 
@@ -190,6 +337,8 @@ hoarding in ch1–3, and talks to Hob in ch9.
 - "I'm not joining anything." (Sam, then others.) The story's relationship
   to membership.
 - Weather as West Cork realism: damp, mist, salt, turf smoke.
+- "You can only outlast them." (Mabel, epilogue.) The book's answer to
+  the chorus. Do not repeat it.
 
 ## Style rules for editors
 
@@ -211,17 +360,32 @@ hoarding in ch1–3, and talks to Hob in ch9.
 9. **Pennyfeather is never the villain.** He is the reader.
 10. **Endings are understated.** The book ends on a gauge coming down and
     Mabel with a cup of tea. Don't add a triumphant finale.
+11. **The chorus is never defeated.** It quietens, it moves on, it fixes on
+    something else. Do not write a thread where the Shed wins the
+    argument.
+12. **The chorus is not a strawman.** Every r/cork thread must contain at
+    least one fair criticism or one poster who is right. If an edit
+    removes the last fair criticism from a thread, the edit is wrong.
 
 ## Open threads (deliberate; do not resolve without author approval)
 
-- Donal (ch4) is a seed. Don't develop him unless asked.
+- Donal's future beyond second record-keeper. He is a seed, not a plot.
 - The second greenhouse (epilogue) is proposed, not built.
 - Drumroe's trial is ongoing at the end; no result is given.
 - The internet misreading is never corrected; it simply moves on.
 - Whether the Shed "scales" is the book's open question. Leave it open.
+- The anti-Muslim rhetoric the author has observed online. The chorus
+  currently keeps this *general* ("the newcomers", "you know the type")
+  and answers it with named villagers ("Tunde is a nurse", "Piotr fixed
+  your lawnmower"). Whether the book needs one explicit moment where a
+  poster says the quiet part and a villager answers it coldly, briefly,
+  with no speech, is an **open authorial decision**. Do not add such a
+  moment without explicit approval; if approved, place it in the ch8
+  thread and keep it under six lines.
 
 ## Appendix (concepts glossary)
 
 The appendix in the text is a table of concepts (Ledger, Rota, Board,
-one-way valve, etc.). Keep it consistent with this bible. If you add a
-concept to the story, add it to the appendix *and* to this bible.
+one-way valve, Notebook, Integral Site, etc.). Keep it consistent with
+this bible. If you add a concept to the story, add it to the appendix
+*and* to this bible.
