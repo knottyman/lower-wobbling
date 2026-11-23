@@ -1,0 +1,23 @@
+{
+  "title": "The Greenhouse at Ballywobble",
+  "canonical": "index.html",
+  "story_bible": "STORY.md",
+  "generated_by": "tools/split.py",
+  "sections": [
+    {"id": "prologue", "num": "—", "kicker": "Prologue", "title": "Trending", "file": "chapters/00-prologue.md", "words": 0},
+    {"id": "ch1", "num": "1", "kicker": "Chapter One", "title": "The Lettuce", "file": "chapters/01-the-lettuce.md", "words": 0},
+    {"id": "noticeboard", "num": null, "kicker": null, "title": "Ballywobble Noticeboard (interlude)", "file": "chapters/interlude-noticeboard.md", "words": 0},
+    {"id": "ch2", "num": "2", "kicker": "Chapter Two", "title": "The Money", "file": "chapters/02-the-money.md", "words": 0},
+    {"id": "ch3", "num": "3", "kicker": "Chapter Three", "title": "People Who Weren't Convinced", "file": "chapters/03-not-convinced.md", "words": 0},
+    {"id": "ch4", "num": "4", "kicker": "Chapter Four", "title": "The Greenhouse", "file": "chapters/04-the-greenhouse.md", "words": 0},
+    {"id": "ch5", "num": "5", "kicker": "Chapter Five", "title": "The Ledger", "file": "chapters/05-the-ledger.md", "words": 0},
+    {"id": "ch6", "num": "6", "kicker": "Chapter Six", "title": "The First Winter", "file": "chapters/06-first-winter.md", "words": 0},
+    {"id": "ch7", "num": "7", "kicker": "Chapter Seven", "title": "The Man Who Owned the Ladders", "file": "chapters/07-the-ladders.md", "words": 0},
+    {"id": "ch8", "num": "8", "kicker": "Chapter Eight", "title": "The Supply Chain", "file": "chapters/08-supply-chain.md", "words": 0},
+    {"id": "ch9", "num": "9", "kicker": "Chapter Nine", "title": "The Visitors", "file": "chapters/09-the-visitors.md", "words": 0},
+    {"id": "ch10", "num": "10", "kicker": "Chapter Ten", "title": "The Next Village", "file": "chapters/10-next-village.md", "words": 0},
+    {"id": "ch11", "num": "11", "kicker": "Chapter Eleven", "title": "The Private Delivery Note", "file": "chapters/11-delivery-note.md", "words": 0},
+    {"id": "epilogue", "num": "—", "kicker": "Epilogue", "title": "The Report", "file": "chapters/12-epilogue.md", "words": 0},
+    {"id": "appendix", "num": "◆", "kicker": null, "title": "A Note on the Concepts", "file": "chapters/13-appendix.md", "words": 0}
+  ]
+}
