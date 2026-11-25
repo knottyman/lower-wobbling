@@ -1,0 +1,194 @@
+{
+  "title": "The Greenhouse at Ballywobble",
+  "source_format": "HTML fragments; preserve markup",
+  "template": "template.html",
+  "output": "index.html",
+  "content": [
+    {
+      "id": "prologue",
+      "kind": "chapter",
+      "title": "Trending",
+      "path": "story/chapters/00-prologue.html"
+    },
+    {
+      "id": "divider-01",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-01.html"
+    },
+    {
+      "id": "ch1",
+      "kind": "chapter",
+      "title": "The Lettuce",
+      "path": "story/chapters/01-the-lettuce.html"
+    },
+    {
+      "id": "interlude-01",
+      "kind": "interlude",
+      "title": "Ballywobble Noticeboard",
+      "path": "story/interludes/interlude-01-noticeboard.html"
+    },
+    {
+      "id": "ch2",
+      "kind": "chapter",
+      "title": "The Money",
+      "path": "story/chapters/02-the-money.html"
+    },
+    {
+      "id": "divider-02",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-02.html"
+    },
+    {
+      "id": "ch3",
+      "kind": "chapter",
+      "title": "People Who Weren't Convinced",
+      "path": "story/chapters/03-not-convinced.html"
+    },
+    {
+      "id": "divider-03",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-03.html"
+    },
+    {
+      "id": "ch4",
+      "kind": "chapter",
+      "title": "The Greenhouse",
+      "path": "story/chapters/04-the-greenhouse.html"
+    },
+    {
+      "id": "interlude-02",
+      "kind": "interlude",
+      "title": "Thread interlude 02",
+      "path": "story/interludes/interlude-02-thread.html"
+    },
+    {
+      "id": "divider-04",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-04.html"
+    },
+    {
+      "id": "divider-05",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-05.html"
+    },
+    {
+      "id": "ch5",
+      "kind": "chapter",
+      "title": "The Ledger",
+      "path": "story/chapters/05-the-ledger.html"
+    },
+    {
+      "id": "divider-06",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-06.html"
+    },
+    {
+      "id": "ch6",
+      "kind": "chapter",
+      "title": "The First Winter",
+      "path": "story/chapters/06-first-winter.html"
+    },
+    {
+      "id": "interlude-03",
+      "kind": "interlude",
+      "title": "Thread interlude 03",
+      "path": "story/interludes/interlude-03-thread.html"
+    },
+    {
+      "id": "divider-07",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-07.html"
+    },
+    {
+      "id": "ch7",
+      "kind": "chapter",
+      "title": "The Man Who Owned the Ladders",
+      "path": "story/chapters/07-the-ladders.html"
+    },
+    {
+      "id": "divider-08",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-08.html"
+    },
+    {
+      "id": "ch8",
+      "kind": "chapter",
+      "title": "The Supply Chain",
+      "path": "story/chapters/08-supply-chain.html"
+    },
+    {
+      "id": "divider-09",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-09.html"
+    },
+    {
+      "id": "ch9",
+      "kind": "chapter",
+      "title": "The Visitors",
+      "path": "story/chapters/09-the-visitors.html"
+    },
+    {
+      "id": "divider-10",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-10.html"
+    },
+    {
+      "id": "ch10",
+      "kind": "chapter",
+      "title": "The Next Village",
+      "path": "story/chapters/10-next-village.html"
+    },
+    {
+      "id": "divider-11",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-11.html"
+    },
+    {
+      "id": "ch11",
+      "kind": "chapter",
+      "title": "The Private Delivery Note",
+      "path": "story/chapters/11-delivery-note.html"
+    },
+    {
+      "id": "divider-12",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-12.html"
+    },
+    {
+      "id": "epilogue",
+      "kind": "chapter",
+      "title": "The Report",
+      "path": "story/chapters/12-epilogue.html"
+    },
+    {
+      "id": "interlude-04",
+      "kind": "interlude",
+      "title": "Thread interlude 04",
+      "path": "story/interludes/interlude-04-thread.html"
+    },
+    {
+      "id": "divider-13",
+      "kind": "divider",
+      "title": "Section divider",
+      "path": "story/structure/divider-13.html"
+    },
+    {
+      "id": "appendix",
+      "kind": "chapter",
+      "title": "A Note on the Concepts",
+      "path": "story/chapters/13-appendix.html"
+    }
+  ]
+}
