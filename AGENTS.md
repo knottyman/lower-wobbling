@@ -1,69 +1,50 @@
-# AGENTS.md — how to edit this story
-
-## Read order (mandatory)
-
-1. `STORY.md` — the whole-arc context. **Read this first, every time.**
-2. `manifest.json` — the fragment index. Use it to find the chapter you
-   need; do not read every fragment.
-3. The specific `chapters/*.md` fragment(s) you are editing.
-4. Only if you need the full text: `index.html` (canonical, large).
+# AGENTS.md — working on The Greenhouse at Ballywobble
 
 ## Source of truth
+- `STORY.md` is canon for plot, characters, timeline, themes and open decisions.
+- `story/manifest.json` defines reading order.
+- `story/chapters/*.html` and `story/interludes/*.html` are editable story source.
+- `template.html` contains website shell, CSS, JavaScript, title block and table of contents.
+- `index.html` is generated output. Never edit it directly.
 
-`index.html` is canonical. `chapters/*.md` are **derived**. The normal
-workflow is:
+## Token-efficient reading workflow
+1. Read this file.
+2. Read only relevant headings in `STORY.md`; do not load the whole bible by default.
+3. Read `story/manifest.json` to identify the target fragment and neighbours.
+4. Read the target chapter and only adjacent material needed for continuity.
+5. Do not read `index.html` for prose-editing tasks.
 
-- **Edit a fragment** (`chapters/NN-*.md`), then run `tools/reassemble.py`
-  to regenerate `index.html`. Never hand-edit `index.html` and expect the
-  fragments to update — they won't.
-- If you must hand-edit `index.html` (e.g. CSS, `<head>`, the noticeboard
-  interlude), run `tools/split.py` afterwards to re-derive the fragments.
+## Editing rules
+- Work on one chapter or interlude per task unless asked otherwise.
+- Edit only the requested fragment; do not rewrite or summarise other chapters.
+- Fragments are HTML, not Markdown. Preserve valid HTML, classes, IDs, figures, links and semantic structure.
+- Preserve inline `<strong>`, `<em>`, paragraph boundaries and `<hr class="star">` dividers.
+- Do not change section IDs or manifest order unless asked.
+- Never invent canon to resolve an open thread. Ask the author first.
+- Keep en-GB / Hiberno-English, dry and understated, third-person past.
+- No new exclamation marks in narration. Show the system in use; do not explain it at length.
 
-## What you may edit
+## Protected canon
+Do not alter without explicit author approval:
+- The one-way valve rule: credits are not money and cannot convert to euros.
+- Hob signing before chapter nine, or his established arc.
+- Pennyfeather's finding: "It is a shed."
+- The prologue and epilogue framing.
+- Open threads and unresolved decisions recorded in `STORY.md`.
 
-- Prose inside a chapter fragment. Keep the YAML front-matter intact.
-- The noticeboard interlude — but keep the forum-poster voice (Barry G.,
-  Sheila P., Mabel B.) and the `(OFFICIAL) (NO POLITICS)` header.
-- The appendix table — but keep it consistent with `STORY.md`.
+## Build and verification
+After editing story content, run:
+```bash
+python3 tools/build.py
+```
+This rebuilds `index.html` from `template.html` and the ordered fragments.
+For prose-only tasks, do not modify the template, CSS or JavaScript.
+For website tasks, edit `template.html`, then rebuild.
+Do not run old `tools/split.py` or `tools/reassemble.py`; they belong to the previous lossy Markdown workflow.
 
-## What you may **not** edit without explicit author approval
-
-- The one-way valve rule (credits ≠ money).
-- Hob signing before ch9, or any change to his arc.
-- Pennyfeather's finding ("It is a shed.").
-- The open threads listed in `STORY.md`.
-- The prologue frame or the epilogue frame.
-- Character names, ages, or roles in `STORY.md`.
-- The `id` attributes of sections (they are anchors; changing them breaks
-  links and the manifest).
-
-## Style
-
-Follow the "Style rules for editors" in `STORY.md`. In particular:
-
-- en-GB / Hiberno-English spelling and idiom.
-- Dry, understated, third-person past.
-- No explaining the system; show it in use.
-- No new exclamation marks in narration.
-- Preserve `<hr class="star">` section breaks where they exist.
-
-## Continuity checks before you commit
-
-Run through this list:
-
-- [ ] Does the edit contradict `STORY.md`'s timeline?
-- [ ] Does it contradict a character's arc (esp. Hob, Gerard, O'Driscoll)?
-- [ ] Does it introduce a concept not in the appendix or `STORY.md`?
-  If so, add it to both.
-- [ ] Does it let credits convert to euros, or vice versa? (If yes: stop.)
-- [ ] Does it make Pennyfeather a villain, or Hob a spokesman? (If yes: stop.)
-- [ ] Does it explain the Rota, the Board, or the Ledger rather than show
-  them? (If yes: rewrite.)
-- [ ] Have you run `tools/reassemble.py` and confirmed `index.html` still
-  opens in a browser?
-
-## Changelog
-
-If you make a substantive change (new scene, new character beat, changed
-arc), add a line to `CHANGELOG.md` describing what changed and why. Keep
-it to one line per change.
+## Before finishing
+- Confirm only requested source fragments changed.
+- Run the build.
+- Check generated HTML contains all chapter section IDs.
+- Report changed files and continuity implications.
+- Add a concise `CHANGELOG.md` entry for substantive story changes.
