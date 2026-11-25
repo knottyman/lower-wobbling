@@ -95,3 +95,62 @@ A follow-up pull request adds the chapter guide and AI task template; check its
 status on GitHub at the start of a session. The first suggested editorial task
 is a continuity review of the interlude inventory and the repeated Drumroe
 reflection across chapters 10–11. These are review questions, not approved edits.
+
+## 8. Multi-agent synchronisation
+
+GitHub `main` is the source of truth for the shared story. A local checkout,
+an agent's workspace and a downloaded ZIP are only copies; they may be behind.
+
+### If the agent has repository access
+
+1. Before editing, fetch the latest repository state and check open pull requests
+   and recent commits.
+2. Work on a dedicated feature branch, not directly on `main`.
+3. Commit the agreed source changes and open or update a pull request against
+   `main`.
+4. Tell the author the branch and PR link, list the changed files, and mention
+   whether the website build was run and verified.
+5. Do not merge unless the author explicitly asks.
+
+### If the agent does not have repository access
+
+1. Ask it to work from the latest files supplied by the author—not from an
+   assumed or remembered copy.
+2. Request a Git patch where possible. Otherwise request the complete changed
+   files with their exact repository paths, preferably in a ZIP.
+3. The author should review the changes before adding them to the repository.
+4. Apply them on a new local feature branch, run the build and checks, then
+   commit and push the branch and open a pull request.
+5. Never overwrite newer repository work with an older file. If the file has
+   changed since the agent received its copy, compare and reconcile the edits.
+
+### Updating the author's local checkout
+
+After a pull request is merged, the author can update their local copy with:
+
+```bash
+git switch main
+git pull origin main
+```
+
+If the author has not cloned the repository yet, clone it once:
+
+```bash
+git clone https://github.com/knottyman/lower-wobbling.git
+```
+
+A PR merge updates GitHub; it does not automatically update anyone's local
+checkout. Each local copy must be pulled separately.
+
+### Handover between agents
+
+Every agent handing work to another agent should provide:
+- The repository branch and latest commit it worked from.
+- The exact files changed.
+- A PR link, or the patch/ZIP and exact paths if it lacked repository access.
+- Build/test results and anything not verified.
+- Any decisions or questions that need the author's approval.
+
+The next agent must check the current repository state before applying a patch
+or continuing work. Treat external agent output as a proposal until reviewed
+and reconciled with the latest `main`.
