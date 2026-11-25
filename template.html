@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>The Greenhouse at Ballywobble</title>
+<meta name="description" content="An ordinary village does something rather extraordinary. A story about a shed, a lettuce, and a system nobody called a system.">
+<meta name="author" content="">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Greenhouse at Ballywobble">
+<meta property="og:description" content="An ordinary village does something rather extraordinary.">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+  :root {
+    --bg:        #faf7f2;
+    --surface:   #f2ece2;
+    --ink:       #1f1c19;
+    --muted:     #6b645c;
+    --rule:      #e0d9cf;
+    --accent:    #7a5c3e;
+    --measure:   38rem;
+    --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:      #15130f;
+      --surface: #1e1b16;
+      --ink:     #e9e3d8;
+      --muted:   #9a938a;
+      --rule:    #2e2a24;
+      --accent:  #c9a678;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: clamp(1.0625rem, 0.95rem + 0.45vw, 1.1875rem);
+    line-height: 1.68;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    hanging-punctuation: first last;
+  }
+
+  /* ---------- progress bar ---------- */
+
+  .progress {
+    position: fixed;
+    inset: 0 0 auto 0;
+    height: 3px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    z-index: 50;
+    will-change: transform;
+  }
+
+  /* ---------- shell ---------- */
+
+  main {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 1.5rem 8rem;
+  }
+
+  /* ---------- title block ---------- */
+
+  header.title {
+    text-align: center;
+    padding: clamp(4rem, 12vh, 8rem) 0 clamp(2.5rem, 6vh, 4rem);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 3rem;
+  }
+
+  header.title h1 {
+    font-size: clamp(2rem, 1.4rem + 2.6vw, 3rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin: 0 0 1rem;
+    text-wrap: balance;
+  }
+
+  header.title .standfirst {
+    font-style: italic;
+    color: var(--muted);
+    font-size: 1.05em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  /* ---------- table of contents ---------- */
+
+  nav.toc {
+    margin: 0 0 4.5rem;
+    padding: 0;
+    font-family: var(--sans);
+    font-size: 0.875rem;
+  }
+
+  nav.toc h2 {
+    font-family: var(--sans);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 1rem;
+  }
+
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.15rem 2rem;
+  }
+
+  @media (min-width: 34rem) {
+    nav.toc ol { grid-template-columns: 1fr 1fr; }
+  }
+
+  nav.toc a {
+    display: block;
+    padding: 0.35rem 0 0.35rem 0.75rem;
+    color: var(--ink);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: border-color 0.15s, color 0.15s;
+  }
+
+  nav.toc a:hover { border-left-color: var(--rule); }
+
+  nav.toc a.current {
+    border-left-color: var(--accent);
+    color: var(--accent);
+  }
+
+  nav.toc .num {
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    margin-right: 0.5rem;
+  }
+
+  /* ---------- sections & headings ---------- */
+
+  section { margin: 0 0 4rem; }
+
+  .kicker {
+    font-family: var(--sans);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.5rem;
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem);
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.75rem;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 2.5rem 0 1rem;
+  }
+
+  p { margin: 0 0 1.15em; }
+
+  p + p { text-indent: 0; }
+
+  /* ---------- images ---------- */
+
+  figure {
+    margin: 0 0 3.5rem;
+    text-align: center;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: block;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    figure img {
+      filter: brightness(0.85) contrast(1.05);
+    }
+  }
+
+  figcaption {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 0.85rem;
+    font-style: italic;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-image {
+    margin: -1.5rem auto 3rem;
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    border-radius: 0;
+    box-shadow: none;
+    max-height: 45vh;
+    object-fit: cover;
+  }
+
+  /* ---------- the noticeboard interlude ---------- */
+
+  .noticeboard {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 4rem;
+    font-family: var(--mono);
+    font-size: 0.8125rem;
+    line-height: 1.75;
+  }
+
+  .noticeboard .head {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin: 0 0 1rem;
+    color: var(--accent);
+  }
+
+  .noticeboard p { margin: 0 0 0.85rem; }
+  .noticeboard p:last-child { margin-bottom: 0; }
+
+  .noticeboard .who { font-weight: 700; }
+
+  /* ---------- r/cork thread interlude ---------- */
+
+  .thread {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 4rem;
+    font-family: var(--sans);
+    font-size: 0.8125rem;
+    line-height: 1.6;
+  }
+
+  .thread .thread-head {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .thread .comment {
+    margin: 0 0 1rem;
+    padding-left: 0.75rem;
+    border-left: 2px solid var(--rule);
+  }
+
+  .thread .comment:last-child { margin-bottom: 0; }
+
+  .thread .handle {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+
+  .thread .comment p { margin: 0; }
+
+  .thread .deleted {
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .thread .modnote {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  /* ---------- rules / dividers ---------- */
+
+  .divider {
+    border: 0;
+    height: 0;
+    margin: 3.5rem auto;
+    width: 4rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  hr.star {
+    border: 0;
+    text-align: center;
+    margin: 3.5rem 0;
+    color: var(--rule);
+  }
+  hr.star::before { content: "\2726"; }
+
+  /* ---------- appendix table ---------- */
+
+  .appendix {
+    border-top: 1px solid var(--rule);
+    padding-top: 3rem;
+    margin-top: 4rem;
+  }
+
+  .appendix table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--sans);
+    font-size: 0.875rem;
+    line-height: 1.55;
+    margin: 0 0 1.5rem;
+  }
+
+  .appendix th,
+  .appendix td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.75rem 0.75rem 0.75rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .appendix th {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .appendix td:last-child {
+    font-family: var(--mono);
+    font-size: 0.8125rem;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 30rem) {
+    .appendix td:last-child { white-space: normal; }
+  }
+
+  /* ---------- footer ---------- */
+
+  footer.colophon {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 0.8125rem;
+    color: var(--muted);
+  }
+
+  footer.colophon p { margin: 0 0 0.5rem; }
+
+  footer.colophon a { color: var(--muted); }
+
+  /* ---------- print ---------- */
+
+  @media print {
+    .progress, nav.toc { display: none; }
+    body { background: #fff; color: #000; font-size: 11.5pt; }
+    main { max-width: none; padding: 0; }
+    header.title { padding-top: 0; }
+    section { page-break-inside: auto; margin-bottom: 2rem; }
+    h2 { page-break-after: avoid; }
+    .noticeboard, .thread { background: none; border-left: 3px solid #ccc; }
+    a { color: #000; text-decoration: none; }
+    figure img { box-shadow: none; border: 1px solid #ccc; }
+    .hero-image { display: none; }
+  }
+
+  /* ---------- selection ---------- */
+
+  ::selection {
+    background: var(--accent);
+    color: var(--bg);
+  }
+</style>
+</head>
+
+<body>
+<div class="progress" aria-hidden="true"></div>
+
+<main>
+
+  <header class="title">
+    <h1>The Greenhouse at Ballywobble</h1>
+    <p class="standfirst">An ordinary village does something rather extraordinary.</p>
+  </header>
+
+  <div class="hero-image">
+    <img src="images/road-to-village.jpg" alt="A misty road leading into a rolling green valley with thatched cottages.">
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#prologue"><span class="num">—</span>Prologue: Trending</a></li>
+      <li><a href="#ch1"><span class="num">1</span>The Lettuce</a></li>
+      <li><a href="#ch2"><span class="num">2</span>The Money</a></li>
+      <li><a href="#ch3"><span class="num">3</span>People Who Weren't Convinced</a></li>
+      <li><a href="#ch4"><span class="num">4</span>The Greenhouse</a></li>
+      <li><a href="#ch5"><span class="num">5</span>The Ledger</a></li>
+      <li><a href="#ch6"><span class="num">6</span>The First Winter</a></li>
+      <li><a href="#ch7"><span class="num">7</span>The Man Who Owned the Ladders</a></li>
+      <li><a href="#ch8"><span class="num">8</span>The Supply Chain</a></li>
+      <li><a href="#ch9"><span class="num">9</span>The Visitors</a></li>
+      <li><a href="#ch10"><span class="num">10</span>The Next Village</a></li>
+      <li><a href="#ch11"><span class="num">11</span>The Private Delivery Note</a></li>
+      <li><a href="#epilogue"><span class="num">—</span>Epilogue: The Report</a></li>
+      <li><a href="#appendix"><span class="num">◆</span>A Note on the Concepts</a></li>
+    </ol>
+  </nav>
+
+  <!-- GENERATED_STORY_CONTENT -->
+
+</main>
+
+<footer class="colophon">
+  <p><strong>The Greenhouse at Ballywobble</strong> — a story about a shed, a lettuce, and a system nobody called a system.</p>
+  <p>Canonical text: this file. Story bible: <code>STORY.md</code>. Editing rules: <code>AGENTS.md</code>. Chapter fragments: <code>chapters/</code>.</p>
+</footer>
+
+<script>
+  // Progress bar. Kept minimal; no dependencies.
+  (function () {
+    var bar = document.querySelector('.progress');
+    if (!bar) return;
+    function update() {
+      var h = document.documentElement;
+      var max = h.scrollHeight - h.clientHeight;
+      var p = max > 0 ? h.scrollTop / max : 0;
+      bar.style.transform = 'scaleX(' + p + ')';
+    }
+    document.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+
+  // TOC current-section highlight. Optional, degrades gracefully.
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a'));
+    if (!links.length || !('IntersectionObserver' in window)) return;
+    var map = {};
+    links.forEach(function (a) {
+      var id = a.getAttribute('href').slice(1);
+      if (id) map[id] = a;
+    });
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && map[e.target.id]) {
+          links.forEach(function (a) { a.classList.remove('current'); });
+          map[e.target.id].classList.add('current');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    Object.keys(map).forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) obs.observe(el);
+    });
+  })();
+</script>
+
+</body>
+</html>
