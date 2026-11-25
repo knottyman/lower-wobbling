@@ -2,6 +2,7 @@
 
 ## Source of truth
 - `STORY.md` is canon for plot, characters, timeline, themes and open decisions.
+- `CHAPTER_GUIDE.md` is a navigation aid and concise chapter summary; it does not override canon.
 - `story/manifest.json` defines reading order.
 - `story/chapters/*.html` and `story/interludes/*.html` are editable story source.
 - `template.html` contains website shell, CSS, JavaScript, title block and table of contents.
@@ -9,10 +10,12 @@
 
 ## Token-efficient reading workflow
 1. Read this file.
-2. Read only relevant headings in `STORY.md`; do not load the whole bible by default.
-3. Read `story/manifest.json` to identify the target fragment and neighbours.
-4. Read the target chapter and only adjacent material needed for continuity.
-5. Do not read `index.html` for prose-editing tasks.
+2. Read `CHAPTER_GUIDE.md` to locate relevant sections.
+3. Read only relevant headings in `STORY.md`; do not load the whole bible by default.
+4. Read `story/manifest.json` to identify the target fragment and neighbours.
+5. Read the target chapter and only adjacent material needed for continuity.
+6. Do not read `index.html` for prose-editing tasks.
+7. Use `AI_TASK_TEMPLATE.md` as the starting prompt for a focused writing task.
 
 ## Editing rules
 - Work on one chapter or interlude per task unless asked otherwise.
@@ -27,7 +30,7 @@
 ## Protected canon
 Do not alter without explicit author approval:
 - The one-way valve rule: credits are not money and cannot convert to euros.
-- Hob signing before chapter nine, or his established arc.
+- Hob's established reservations and his decision to sign in chapter nine.
 - Pennyfeather's finding: "It is a shed."
 - The prologue and epilogue framing.
 - Open threads and unresolved decisions recorded in `STORY.md`.
