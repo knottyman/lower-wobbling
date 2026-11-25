@@ -1,12 +1,11 @@
 # The Greenhouse at Ballywobble — Story Bible
 
-> Read this before editing any chapter. It is the whole-arc context.
-> The canonical text lives in `index.html`. Chapter fragments in `chapters/`
-> are derived from it. See `AGENTS.md` for the editing workflow.
+> This is the canon reference for plot, characters, timeline, tone and open decisions.
+> The editable story source is in `story/chapters/` and `story/interludes/`;
+> `index.html` is generated output. See `AGENTS.md` for the workflow and
+> `CHAPTER_GUIDE.md` for short chapter summaries and navigation.
 >
-> The online chorus (the r/cork layer) has its own detailed bible. If you
-> have it as a separate file, read it after this one. If not, §6 below is
-> the summary that matters.
+> The online chorus (the r/cork layer) is covered in the section below.
 
 ## Logline
 
