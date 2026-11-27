@@ -85,29 +85,38 @@ it with her.
 **Mabel Brennan** (71, widow, lifelong Ballywobble). The engine. Dislikes
 meetings, "stakeholders", petitions. Difficult to stop once she decides
 something is daft. Speaks in short declaratives. Dry. Never sentimental
-aloud. Her arc: from private grumbler to the person who holds the
-structure together without ever claiming to. She insists she hates
+aloud. She has short, practical grey hair, alert eyes and purposeful
+movements; people tend to notice her energy and presence before they
+remember her age. Her clothes are comfortable and practical, with a little
+individuality rather than a uniform "village grandmother" look. Her humour
+is straight-faced and understated: she does not signal a joke or wait for
+people to catch it. Her arc: from private grumbler to the person who holds
+the structure together without ever claiming to. She insists she hates
 meetings and is, by ch4, effectively chairing them; the gap between what
 she says and what she does is deliberate and is a running joke. Do not
 resolve it by having her admit it.
 
-**Ines** (18, environmental science student, Portuguese-West Cork, parents
-run The Prassa café). The systems mind. Reads forums (the Integral Site),
-watches and listens widely, writes things down, designs the Ledger and the
-Board. She encounters forceful systems critiques but is selective rather
-than a disciple: keep distinct what she consumes, what she believes, and
-what she puts into practice. Her defining habit is asking incisive
-questions that expose assumptions and practical consequences. She notices
-the question nobody has asked yet: who is responsible if the volunteer
-cannot come; who sees the delivery list; which parts of a model does
-another village actually need? Her questions can be inconvenient and
-occasionally annoy people, but they come from curiosity and care, not a
-desire to show off. She does not have all the answers and must be willing
-to have her own assumptions challenged. Her arc: from enthusiast with a
-notebook to someone who understands that scaling means *changing*, not
-copying. Never becomes a leader; stays a translator. She is the author's
-temptation to lecture, and the book must resist it. She facilitates the
-Board but never explains it.
+**Ines** (20, environmental science student, Portuguese-West Cork, parents
+run The Prassa café). The systems mind. Fairly attractive in an understated,
+natural way, with an observant, knowing expression and a persuasive look
+that can make someone feel their arm has been twisted before they quite
+notice it happening. Her charm is part of her presence, not her whole
+personality. Reads forums (the Integral Site), watches and listens widely,
+writes things down, designs the Ledger and the Board. She encounters
+forceful systems critiques but is selective rather than a disciple: keep
+distinct what she consumes, what she believes, and what she puts into
+practice. Her defining habit is asking incisive questions that expose
+assumptions and practical consequences. She notices the question nobody
+has asked yet: who is responsible if the volunteer cannot come; who sees
+the delivery list; which parts of a model does another village actually
+need? Her questions can be inconvenient and occasionally annoy people,
+but they come from curiosity and care, not a desire to show off. She does
+not have all the answers and must be willing to have her own assumptions
+challenged. Her arc: from enthusiast with a notebook to someone who
+understands that scaling means *changing*, not copying. Never becomes a
+leader; stays a translator. She is the author's temptation to lecture,
+and the book must resist it. She facilitates the Board but never explains
+it.
 
 **Sam Watts** (42, mechanic, three kids, wife manages accounts). The
 reluctant joiner. "I'm not joining anything." Good at work, bad at
