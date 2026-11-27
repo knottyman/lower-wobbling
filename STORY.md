@@ -93,11 +93,21 @@ resolve it by having her admit it.
 
 **Ines** (18, environmental science student, Portuguese-West Cork, parents
 run The Prassa café). The systems mind. Reads forums (the Integral Site),
-writes things down, designs the Ledger and the Board. Her arc: from
-enthusiast with a notebook to someone who understands that scaling means
-*changing*, not copying. Never becomes a leader; stays a translator. She
-is the author's temptation to lecture, and the book must resist it. She
-facilitates the Board but never explains it.
+watches and listens widely, writes things down, designs the Ledger and the
+Board. She encounters forceful systems critiques but is selective rather
+than a disciple: keep distinct what she consumes, what she believes, and
+what she puts into practice. Her defining habit is asking incisive
+questions that expose assumptions and practical consequences. She notices
+the question nobody has asked yet: who is responsible if the volunteer
+cannot come; who sees the delivery list; which parts of a model does
+another village actually need? Her questions can be inconvenient and
+occasionally annoy people, but they come from curiosity and care, not a
+desire to show off. She does not have all the answers and must be willing
+to have her own assumptions challenged. Her arc: from enthusiast with a
+notebook to someone who understands that scaling means *changing*, not
+copying. Never becomes a leader; stays a translator. She is the author's
+temptation to lecture, and the book must resist it. She facilitates the
+Board but never explains it.
 
 **Sam Watts** (42, mechanic, three kids, wife manages accounts). The
 reluctant joiner. "I'm not joining anything." Good at work, bad at
@@ -405,6 +415,10 @@ The Ledger explainer exists from ch9 onward.
 13. **The gauge has two modes, not more.** Conflict during discussion,
     consent at decision. Show both at least once. Teach consent through
     dialogue. Never explain it in narration.
+14. **Questions are not speeches.** Ines may expose an assumption with a
+    sharp question, but she must not use questions as disguised lectures.
+    Let other characters answer, disagree, or be irritated; sometimes the
+    question should reveal that Ines herself has missed something.
 
 ## Open threads (deliberate; do not resolve without author approval)
 
