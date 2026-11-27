@@ -46,6 +46,24 @@ manifesto or a victory speech.
 - **Drumroe and the question of scaling:** chapters 9–11.
 - **Online chorus:** `STORY.md` → “The online chorus”; read only the relevant interlude and the related chapter.
 
+## Ines: questions before answers
+
+Ines is often the person who notices an assumption the others have stepped
+over. Let her ask concise, incisive questions that expose practical
+consequences: who is responsible if the volunteer cannot come; who gets to
+see delivery information; which parts of Ballywobble's arrangement does
+Drumroe actually need? Her questions can be inconvenient and occasionally
+annoying, but they should arise from curiosity and care rather than a need
+to demonstrate that she is clever.
+
+She is not the person with all the answers. She can be challenged, discover
+that she has made an assumption of her own, and change her mind. This keeps
+her a translator and systems-minded participant, not the author's
+mouthpiece. Her reading and viewing may include forceful systems critiques,
+but she is selective: distinguish what she encounters, what she believes,
+and what she actually puts into practice. Do not turn her into a lecturer
+or a stand-in for any real-world commentator.
+
 ## Continuity checks to keep visible
 
 These are flags for the author, not permission for an agent to rewrite canon.
