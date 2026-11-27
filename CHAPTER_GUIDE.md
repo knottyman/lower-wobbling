@@ -46,6 +46,24 @@ manifesto or a victory speech.
 - **Drumroe and the question of scaling:** chapters 9–11.
 - **Online chorus:** `STORY.md` → “The online chorus”; read only the relevant interlude and the related chapter.
 
+## Character appearance notes
+
+These are the visual details agreed so far. Add further specifics only
+when the author settles them; do not fill gaps with stock-character
+assumptions.
+
+- **Mabel:** 71, but her age is not the first thing people notice. She has
+  short, practical grey hair, alert eyes and purposeful movements. Her
+  clothes are comfortable and practical, with a little individuality.
+  Her humour is dry and straight-faced; she does not signal when she is
+  joking.
+- **Ines:** 20. Fairly attractive in an understated, natural way. Her
+  expression is observant and knowing, and she has a persuasive look that
+  can make someone feel their arm has been twisted before they quite
+  notice it happening. Her charm is one part of her presence, not her
+  whole personality. She has dark brown, naturally wavy, shoulder-length
+  hair and brown eyes. Her other physical details remain open.
+
 ## Ines: questions before answers
 
 Ines is often the person who notices an assumption the others have stepped
