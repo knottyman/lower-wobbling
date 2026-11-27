@@ -61,8 +61,8 @@ assumptions.
   expression is observant and knowing, and she has a persuasive look that
   can make someone feel their arm has been twisted before they quite
   notice it happening. Her charm is one part of her presence, not her
-  whole personality. Her hair, build and other physical details have not
-  yet been decided.
+  whole personality. She has dark brown, naturally wavy, shoulder-length
+  hair and brown eyes. Her other physical details remain open.
 
 ## Ines: questions before answers
 
