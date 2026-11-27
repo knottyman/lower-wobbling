@@ -101,7 +101,8 @@ run The Prassa café). The systems mind. Fairly attractive in an understated,
 natural way, with an observant, knowing expression and a persuasive look
 that can make someone feel their arm has been twisted before they quite
 notice it happening. Her charm is part of her presence, not her whole
-personality. Reads forums (the Integral Site), watches and listens widely,
+personality. She has dark brown, naturally wavy, shoulder-length hair
+and brown eyes. Reads forums (the Integral Site), watches and listens widely,
 writes things down, designs the Ledger and the Board. She encounters
 forceful systems critiques but is selective rather than a disciple: keep
 distinct what she consumes, what she believes, and what she puts into
