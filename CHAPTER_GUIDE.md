@@ -60,9 +60,11 @@ assumptions.
 - **Ines:** 20. Fairly attractive in an understated, natural way. Her
   expression is observant and knowing, and she has a persuasive look that
   can make someone feel their arm has been twisted before they quite
-  notice it happening. Her charm is one part of her presence, not her
-  whole personality. She has dark brown, naturally wavy, shoulder-length
-  hair and brown eyes. Her other physical details remain open.
+  notice it happening. This describes her appearance and presence; it
+  should not be confused with being all-knowing. Her charm is one part of
+  her presence, not her whole personality. She has dark brown, naturally
+  wavy, shoulder-length hair and brown eyes. Her other physical details
+  remain open.
 
 ## Ines: questions before answers
 
@@ -74,13 +76,20 @@ Drumroe actually need? Her questions can be inconvenient and occasionally
 annoying, but they should arise from curiosity and care rather than a need
 to demonstrate that she is clever.
 
-She is not the person with all the answers. She can be challenged, discover
-that she has made an assumption of her own, and change her mind. This keeps
-her a translator and systems-minded participant, not the author's
-mouthpiece. Her reading and viewing may include forceful systems critiques,
-but she is selective: distinguish what she encounters, what she believes,
-and what she actually puts into practice. Do not turn her into a lecturer
-or a stand-in for any real-world commentator.
+She is not the person with all the answers. When someone challenges her,
+her first instinct is to understand why they see it differently. She
+listens before deciding; she may still disagree, but sometimes what she
+hears changes her mind. She can be stubborn and may occasionally feel
+defensive, but she does not ask questions merely to lead people towards
+a conclusion she has already chosen. Her knowing, persuasive expression
+is a separate part of her presence, not evidence that she is all-knowing.
+
+She can discover that she has made an assumption of her own and change
+her mind. This keeps her a translator and systems-minded participant, not
+the author's mouthpiece. Her reading and viewing may include forceful
+systems critiques, but she is selective: distinguish what she encounters,
+what she believes, and what she actually puts into practice. Do not turn
+her into a lecturer or a stand-in for any real-world commentator.
 
 ## Continuity checks to keep visible
 
