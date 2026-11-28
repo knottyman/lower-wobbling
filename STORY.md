@@ -96,7 +96,7 @@ meetings and is, by ch4, effectively chairing them; the gap between what
 she says and what she does is deliberate and is a running joke. Do not
 resolve it by having her admit it.
 
-**Ines** (20, environmental science student, Portuguese-West Cork, parents
+**Ines Pereira** (20, environmental science student, Portuguese-West Cork, parents
 run Stella's café). The systems mind. Fairly attractive in an understated,
 natural way, with an observant, knowing expression and a persuasive look
 that can make someone feel their arm has been twisted before they quite
