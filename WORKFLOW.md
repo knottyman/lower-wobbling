@@ -12,7 +12,11 @@ It records how we work; it does not replace the story canon.
 3. Read `CHAPTER_GUIDE.md` to find the relevant part of the story.
 4. Read only the necessary headings in `STORY.md`, then the target chapter and
    any adjacent material needed for continuity.
-5. Ask the author what they want to work on if the next task is not explicit.
+5. When the task touches INTEGRAL principles, one of the five systems,
+   community technology, resource coordination or federation, also read the
+   relevant parts of `editorial/INTEGRAL_IN_STORY.md`. It is a framework
+   reference, not a replacement for story canon.
+6. Ask the author what they want to work on if the next task is not explicit.
    Do not assume an old suggestion has been approved.
 
 ## 2. How we collaborate
@@ -57,6 +61,7 @@ Use `AI_TASK_TEMPLATE.md` when preparing a focused prompt for another agent.
 
 - Never load the whole website or every chapter for an ordinary edit.
 - Use `CHAPTER_GUIDE.md` for navigation, not as a substitute for canon.
+- Use `editorial/INTEGRAL_IN_STORY.md` when relevant to understand the framework; use `STORY.md` for what is already true in the novel. Do not silently make an early village arrangement equivalent to a complete INTEGRAL system.
 - Read only relevant `STORY.md` headings and the target fragment.
 - Read neighbouring chapters only when needed to check a hand-off or callback.
 - Ask for an outline or critique before asking for a full new scene.
@@ -90,11 +95,12 @@ and plot decisions in `STORY.md`, not here.
 
 ## 7. Current starting point
 
-The chapter-based source and build workflow has been merged into `main`.
-A follow-up pull request adds the chapter guide and AI task template; check its
-status on GitHub at the start of a session. The first suggested editorial task
-is a continuity review of the interlude inventory and the repeated Drumroe
-reflection across chapters 10–11. These are review questions, not approved edits.
+The chapter-based source, chapter guide and AI task template are in `main`.
+The current editorial framework reference is `editorial/INTEGRAL_IN_STORY.md`;
+read it when a task involves the five systems, technology or federation. It is
+based on the author's supplied plain-English guide and does not replace the
+full technical paper or the story canon. Existing continuity review questions
+remain review questions, not approved edits.
 
 ## 8. Multi-agent synchronisation
 
