@@ -100,7 +100,8 @@ resolve it by having her admit it.
 run The Prassa café). The systems mind. Fairly attractive in an understated,
 natural way, with an observant, knowing expression and a persuasive look
 that can make someone feel their arm has been twisted before they quite
-notice it happening. Her charm is part of her presence, not her whole
+notice it happening. That is how she comes across, not a sign that she
+knows everything. Her charm is part of her presence, not her whole
 personality. She has dark brown, naturally wavy, shoulder-length hair
 and brown eyes. Reads forums (the Integral Site), watches and listens widely,
 writes things down, designs the Ledger and the Board. She encounters
@@ -111,13 +112,17 @@ assumptions and practical consequences. She notices the question nobody
 has asked yet: who is responsible if the volunteer cannot come; who sees
 the delivery list; which parts of a model does another village actually
 need? Her questions can be inconvenient and occasionally annoy people,
-but they come from curiosity and care, not a desire to show off. She does
-not have all the answers and must be willing to have her own assumptions
-challenged. Her arc: from enthusiast with a notebook to someone who
-understands that scaling means *changing*, not copying. Never becomes a
-leader; stays a translator. She is the author's temptation to lecture,
-and the book must resist it. She facilitates the Board but never explains
-it.
+but they come from curiosity and care, not a desire to show off. When
+someone challenges her, her first instinct is to understand why they see
+it differently. She listens before deciding; she may still disagree, but
+sometimes what she hears changes her mind. She can be stubborn and may
+occasionally feel defensive, but she does not treat questions as a route
+to her own predetermined answer. She does not have all the answers and
+must be willing to have her own assumptions challenged. Her arc: from
+enthusiast with a notebook to someone who understands that scaling means
+*changing*, not copying. Never becomes a leader; stays a translator. She
+is the author's temptation to lecture, and the book must resist it. She
+facilitates the Board but never explains it.
 
 **Sam Watts** (42, mechanic, three kids, wife manages accounts). The
 reluctant joiner. "I'm not joining anything." Good at work, bad at
