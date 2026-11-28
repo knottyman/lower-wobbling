@@ -97,7 +97,7 @@ she says and what she does is deliberate and is a running joke. Do not
 resolve it by having her admit it.
 
 **Ines** (20, environmental science student, Portuguese-West Cork, parents
-run The Prassa café). The systems mind. Fairly attractive in an understated,
+run Stella's café). The systems mind. Fairly attractive in an understated,
 natural way, with an observant, knowing expression and a persuasive look
 that can make someone feel their arm has been twisted before they quite
 notice it happening. That is how she comes across, not a sign that she
@@ -245,7 +245,7 @@ If an interlude has only jokes at the posters' expense, cut it.
   "the woman in charge" → stung → trains two others to share the contact
   role → posts one calm, unbothered reply that ends the thread → stops
   posting.
-- `u/InesFromThePrassa` — the lurker who sometimes speaks. Reads
+- `u/InesEstrella` — the lurker who sometimes speaks. Reads
   everything, posts almost nothing. When she does, it's precise and
   slightly too clever, and she regrets it. She never wins an argument
   online. Arc: reads → drafts → posts once → gets piled on → stops →
