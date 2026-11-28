@@ -3,6 +3,7 @@
 ## Source of truth
 - `STORY.md` is canon for plot, characters, timeline, themes and open decisions.
 - `CHAPTER_GUIDE.md` is a navigation aid and concise chapter summary; it does not override canon.
+- `editorial/INTEGRAL_IN_STORY.md` is the framework reference for INTEGRAL principles and their possible story applications. It does not override `STORY.md` or establish new canon.
 - `story/manifest.json` defines reading order.
 - `story/chapters/*.html` and `story/interludes/*.html` are editable story source.
 - `template.html` contains website shell, CSS, JavaScript, title block and table of contents.
@@ -13,10 +14,11 @@
 2. Read this file.
 3. Read `CHAPTER_GUIDE.md` to locate relevant sections.
 4. Read only relevant headings in `STORY.md`; do not load the whole bible by default.
-5. Read `story/manifest.json` to identify the target fragment and neighbours.
-6. Read the target chapter and only adjacent material needed for continuity.
-7. Do not read `index.html` for prose-editing tasks.
-8. Use `AI_TASK_TEMPLATE.md` as the starting prompt for a focused writing task.
+5. If the task touches the INTEGRAL framework, the five systems, technology, resource coordination or federation, read the relevant parts of `editorial/INTEGRAL_IN_STORY.md` as well.
+6. Read `story/manifest.json` to identify the target fragment and neighbours.
+7. Read the target chapter and only adjacent material needed for continuity.
+8. Do not read `index.html` for prose-editing tasks.
+9. Use `AI_TASK_TEMPLATE.md` as the starting prompt for a focused writing task.
 
 ## Editing rules
 - Work on one chapter or interlude per task unless asked otherwise.
@@ -27,6 +29,7 @@
 - Never invent canon to resolve an open thread. Ask the author first.
 - Keep en-GB / Hiberno-English, dry and understated, third-person past.
 - No new exclamation marks in narration. Show the system in use; do not explain it at length.
+- When using INTEGRAL concepts, follow `editorial/INTEGRAL_IN_STORY.md` and distinguish the framework as described there from the village's partial, existing arrangements. Do not silently turn the Board into a complete CDS, the Notebook into a complete OAD library, or the Ledger into the full ITC model.
 
 ## Protected canon
 Do not alter without explicit author approval:
