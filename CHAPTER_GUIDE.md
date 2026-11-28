@@ -16,6 +16,12 @@ Ballywobble discover that their way of organising cannot simply be copied.
 The story stays affectionate, dry and unresolved rather than turning into a
 manifesto or a victory speech.
 
+## INTEGRAL framework reference
+
+The story is intended to make the five connected INTEGRAL systems visible through practical village life, not through lectures. For the source-based explanation and the distinction between the framework and Ballywobble's early, partial arrangements, see [`editorial/INTEGRAL_IN_STORY.md`](editorial/INTEGRAL_IN_STORY.md).
+
+Use that document when developing scenes involving decision-making (CDS), open designs (OAD), contribution and access (ITC), cooperative production coordination (COS), feedback and review (FRS), technology, nodes or federation. `STORY.md` remains the canon authority: do not assume the Board, Notebook, Ledger, Rota or current feedback practices already implement the complete framework.
+
 ## Chapter-by-chapter map
 
 | Section | What happens | What it changes |
@@ -39,7 +45,8 @@ manifesto or a victory speech.
 
 - **How the Ledger works:** `STORY.md` → “Key concepts”; chapters 1, 2 and 5.
 - **Why money and credits must stay separate:** `STORY.md` → “Key concepts”; chapters 2 and 8.
-- **Decision-making / the Board:** `STORY.md` → “Key concepts”; chapter 4.
+- **Decision-making / the Board:** `STORY.md` → “Key concepts”; chapter 4; framework context in `editorial/INTEGRAL_IN_STORY.md` (CDS).
+- **The five INTEGRAL systems and how they connect:** `editorial/INTEGRAL_IN_STORY.md`; use `STORY.md` for established village canon.
 - **Hob's position and decision:** `STORY.md` → “Characters” and “Timeline”; chapters 5 and 9.
 - **O'Driscoll's arc:** `STORY.md` → “Characters”; chapters 3, 7 and 8.
 - **Gerard's arc:** `STORY.md` → “Characters” and “Timeline”; chapters 6 and 9.
