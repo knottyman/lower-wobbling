@@ -125,7 +125,7 @@ is the author's temptation to lecture, and the book must resist it. She
 facilitates the Board but never explains it.
 
 **Sam Watts** (42, mechanic, three kids, wife manages accounts). The
-reluctant joiner. "I'm not joining anything." Good at work, bad at
+reluctant joiner. Good at work, bad at
 charging. His arc: from "his wife made him" to the person who says "we
 shouldn't promise what we haven't got."
 
