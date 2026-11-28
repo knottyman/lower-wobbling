@@ -13,6 +13,7 @@ You are helping edit **The Greenhouse at Ballywobble**.
 ## Files to read
 - `AGENTS.md`
 - `CHAPTER_GUIDE.md`
+- `editorial/INTEGRAL_IN_STORY.md` when the task involves INTEGRAL systems, technology, resource coordination or federation
 - Only the relevant headings from `STORY.md`: [list headings]
 - Target fragment: [path, e.g. `story/chapters/06-first-winter.html`]
 - Adjacent fragment(s), only if needed: [paths]
@@ -26,6 +27,10 @@ Do not read `index.html` for a prose task. It is generated output.
   en-GB / Hiberno-English.
 - Do not turn the story into a manifesto, explain its ideas in lectures, or
   make the village into a collection of caricatures.
+- When using INTEGRAL concepts, distinguish the framework described in
+  `editorial/INTEGRAL_IN_STORY.md` from the village's existing partial
+  arrangements. `STORY.md` remains canon; do not silently retrofit the full
+  CDS, OAD, ITC, COS or FRS onto an established story mechanism.
 - Preserve unresolved threads. Do not invent a resolution without asking.
 - Change only the requested fragment. Do not rewrite neighbouring chapters
   for convenience.

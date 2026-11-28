@@ -43,6 +43,54 @@ misreading.
   by explaining it. The moment a character lectures the reader on
   sociocracy, the book has failed.
 
+## INTEGRAL framework and the story's direction
+
+The story's original ambition includes making the core systems in Peter
+Joseph's INTEGRAL framework understandable through the villagers' everyday
+lives. The book should not become a manifesto or a technical manual, but it
+must not shrink that ambition into a generic story about people sharing
+vegetables and tools. The villagers can draw on existing systems knowledge
+and modern technology; they do not have to reinvent everything from scratch.
+
+The five connected systems are:
+- **CDS — Collaborative Decision System:** proposals, concerns, degrees of
+  support, objections, structured dialogue and recorded decisions.
+- **OAD — Open Access Design:** shared designs and instructions that can be
+  reused and improved, with attention to materials, repair, lifespan and
+  environmental impact.
+- **ITC — Integral Time Credits:** contribution records and access values;
+  credits are not money and are not intended to become a tradable store of
+  power.
+- **COS — Cooperative Organization System:** cooperative coordination of
+  people, skills, tasks, materials and production.
+- **FRS — Feedback & Review System:** monitoring outcomes and sending
+  feedback to the parts of the system that can respond.
+
+They form a continuous cycle: a need is identified and a decision made;
+design and production are organised; contributions and resource use are
+recorded; outcomes are reviewed; and feedback may lead to a revised decision,
+design or work arrangement. Nodes can connect and federate through shared
+standards and cooperation without a central authority taking over. The
+framework is intended to grow voluntarily, beginning alongside the existing
+economy.
+
+**The current Shed is an early and partial arrangement, not a fully
+implemented INTEGRAL node.** The Board has some family resemblance to the
+CDS; Ines's Notebook is a foothold for shared design knowledge; the Ledger
+shares some principles with ITC but is not automatically the full ITC model;
+the Rota and work groups are early cooperative coordination; and the
+villagers' practical reviews are beginnings of feedback and monitoring.
+These distinctions matter. Do not silently retrofit the full framework
+onto established story mechanisms.
+
+The detailed editorial reference is
+[`editorial/INTEGRAL_IN_STORY.md`](editorial/INTEGRAL_IN_STORY.md). It is
+based on the author's supplied plain-English guide to the technical paper;
+consult it when developing scenes involving the five systems, technology,
+resource coordination or federation. `STORY.md` remains the authority for
+canon. Any change to established mechanics or unresolved story decisions
+requires the author's approval.
+
 ## Structure
 
 | # | Section | Kicker | Function |
