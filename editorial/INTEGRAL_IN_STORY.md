@@ -202,4 +202,4 @@ Technology can be ordinary and accessible where appropriate. The important quest
 
 ## Source note
 
-Source used: *INTEGRAL: A Plain-English Guide*, based on Peter Joseph's technical white paper v0.1 (December 2025), supplied by the author as `Integral_Plain_Language_Guide.pdf`. This editorial document is a story-development interpretation of that guide, not a substitute for the full technical paper.
+Source used: *INTEGRAL: A Plain-English Guide*, based on Peter Joseph's technical white paper v0.1 (December 2025), supplied by the author as an attachment for this work. The guide is not currently identified as a file in the repository. This editorial document is a story-development interpretation of that guide, not a substitute for the full technical paper.
