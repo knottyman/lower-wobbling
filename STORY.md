@@ -33,7 +33,7 @@ misreading.
 - Not a manifesto. It does not argue that co-ops are better; it shows one
   working and lets the reader decide.
 - Not a satire of the village. The village is treated with affection.
-- Not a satire of the bank either — Pennyfeather is earnest, not villainous.
+- Not a satire of the bank either — Wolseley is earnest, not villainous.
 - Not a socialist triumph or a capitalist critique. The book deliberately
   refuses to land on either side. Keep that ambiguity.
 - Not preachy about climate, community, or mutual aid. Show, don't tell.
@@ -47,7 +47,7 @@ misreading.
 
 | # | Section | Kicker | Function |
 |---|---------|--------|----------|
-| — | prologue | Prologue | Frame: viral misreading. Introduces Pennyfeather. |
+| — | prologue | Prologue | Frame: viral misreading. Introduces Wolseley. |
 | 1 | the-lettuce | Chapter One | Inciting incident: lettuce, Mabel, Ines, the bucket. |
 | 2 | the-money | Chapter Two | Mrs Kavanagh; Odd Jobs co-op; the one-way valve. |
 | 3 | not-convinced | Chapter Three | McKenna, O'Driscoll; the supermarket letter. |
@@ -59,7 +59,7 @@ misreading.
 | 9 | the-visitors | Chapter Nine | Scaling questions; Hob signs; Aoife stung. |
 | 10 | next-village | Chapter Ten | Drumroe; a different set of problems. |
 | 11 | delivery-note | Chapter Eleven | The private delivery note; scaling ≠ copying. |
-| — | epilogue | Epilogue | Pennyfeather's report ("It is a shed."). |
+| — | epilogue | Epilogue | Wolesley's report ("It is a shed."). |
 | ◆ | appendix | (none) | Concepts glossary. |
 
 Three interludes sit between sections, outside the `<section>` structure:
@@ -154,7 +154,7 @@ by which the consent mode of the gauge is taught to the reader (ch4): he
 asks the difference between an opinion and an objection, and Ines answers
 him plainly.
 
-**Mr Reginald Pennyfeather** (bank Risk Assessment Officer). The frame.
+**Mr Reginald Wolesley** (bank Risk Assessment Officer). The frame.
 Earnest, not villainous. His report ends "It is a shed." Comic function:
 he is the reader who wants a system and finds one that isn't.
 
@@ -337,7 +337,7 @@ be reflected in the prose, not just the interludes):
   dialogue as anything grander. It is just a forum.
 - **The one-way valve** — the rule that makes the whole thing work.
   Any edit that lets credits buy euros (or vice versa) breaks the story.
-- **"It is a shed."** — Pennyfeather's finding. The story's thesis in
+- **"It is a shed."** — Wolesley's finding. The story's thesis in
   four words. Do not improve it.
 
 ## Timeline
@@ -353,7 +353,7 @@ Roughly two years, plus a prologue frame and an epilogue frame.
   gauge modes demonstrated. The first r/cork thread (i2) appears two days
   after the build.
 - Ch5: the Ledger explained; Hob declines; O'Leary's gutters; Gerard
-  reads the Ledger; Hob still declines. Pennyfeather sees the ownership
+  reads the Ledger; Hob still declines. Wolesley sees the ownership
   note on the chapel wall.
 - Ch6: greenhouse finished March; first harvest May; storm "the first
   winter" (the book's timeline is loose here — the storm is the first
@@ -369,7 +369,7 @@ Roughly two years, plus a prologue frame and an epilogue frame.
   contact role; the Ledger explainer is pinned up.
 - Ch10: Drumroe; Mary; Niamh; the first Saturday.
 - Ch11: the private delivery note; scaling ≠ copying.
-- Epilogue: Pennyfeather files the report; the internet moves on; the
+- Epilogue: Wolesley files the report; the internet moves on; the
   second greenhouse is proposed; the final r/cork thread (i5) shows
   HealyPass defending the Shed, Barry still suspicious, Mary signing off.
   Mabel: "You can only outlast them."
@@ -388,7 +388,7 @@ The Ledger explainer exists from ch9 onward.
 - The one-way valve as the story's central mechanism.
 - "He told everyone it had been his idea." (Gerard, twice; O'Driscoll,
   once.) A running joke about credit and ego. Don't overuse.
-- "That's not a system." / "No. It's the beginning of one." (Pennyfeather
+- "That's not a system." / "No. It's the beginning of one." (Wolesley
   and Mabel.) A call-and-response. Use it rarely.
 - Tea as load-bearing infrastructure.
 - "I'm not joining anything." (Sam, then others.) The story's relationship
@@ -418,7 +418,7 @@ The Ledger explainer exists from ch9 onward.
    money is off-canon.
 8. **Hob does not become a spokesman.** He fixes things and reads the
    Ledger. That is all.
-9. **Pennyfeather is never the villain.** He is the reader.
+9. **Wolesley is never the villain.** He is the reader.
 10. **Endings are understated.** The book ends on a gauge coming down and
     Mabel with a cup of tea. Don't add a triumphant finale.
 11. **The chorus is never defeated.** It quietens, it moves on, it fixes on
